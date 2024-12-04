@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest14.jpeg");
+        }
+    </style>
+</head>
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b><i>Mientras avanzan, <b>Peter</b> se detiene al notar un objeto antiguo,
+                        un diario cubierto de polvo y musgo, medio oculto entre unas rocas.
+                        Con curiosidad, lo recoge y observa que, de alguna manera, el objeto
+                        le parece extrañamente familiar. El diseño y la textura del cuero lo
+                        transportan a un pasado que no logra recordar del todo.</i></b></p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'"
+                    >Intentas recordar
+                </a>            
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter: </b><i>(Confuso)</i></p>
+                <p>— Este diario... lo he visto antes, ¿o tal vez lo soñé? Algo sobre
+                    él me resulta tan familiar... </p>
+
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Dolor de cabeza
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>Narración: Al abrir el diario con cuidado, ve que el contenido está
+                                bloqueado por un mensaje que parece un acertijo, algo que le resulta
+                                inquietantemente conocido.</i></b></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC23.html" class="button">Leer</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemDiario02.png" alt="Diario">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

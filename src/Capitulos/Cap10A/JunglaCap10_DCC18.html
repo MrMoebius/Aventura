@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestArco.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b><i>Tras decir esto se aparece un arco de piedra con dos enormes
+                        puertas que se abren enfrente de Peter. </i></b></p>
+            <p><b><i></i>A lo lejos se puede ver un cuerpo enorme de unos 7 metros...
+                    era Lumina en su verdadero cuerpo.</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Increblemente inquieto
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p><b><i>Su cuerpo... esbelto y precioso parecía esculpido por las manos de los dioses,
+                            con curvas que fluían con gracia y armonía.
+                            La piel de Lumina brillaba con un resplandor etéreo,
+                            como si estuviera hecha de luz pura,
+                            reflejando los colores del arcoíris en cada movimiento.
+                            Sus largos cabellos, que caían como cascadas doradas,
+                            danzaban suavemente a su alrededor,
+                            iluminando el espacio con un brillo cálido y acogedor. </i></b></p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>Los ojos de Lumina eran dos orbes profundos y luminosos,
+                                que parecían contener la sabiduría de milenios y el poder de las estrellas.
+                                Al mirarlos, Peter sintió que su alma se llenaba de calma y determinación,
+                                como si la diosa pudiera ver más allá de su exterior,
+                                hasta lo más profundo de su ser. </i></b></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC19.html" class="button">...</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de derecha(oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:Block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/LuminaLigth01.png" alt="Lumina">
+        </div>
+    </div>
+
+</body>
+
+</html>

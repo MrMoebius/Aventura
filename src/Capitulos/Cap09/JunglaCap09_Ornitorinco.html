@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest06.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capítulo 9: Miguel, el Ornitorrinco en Definición.</p>
+            <p>Mientras Peter, Don Capibara, Alex la Pantera Sabrosona, y Ainhoa la
+                Nutria Dormilona continúan su camino, se adentran aún más en el corazón
+                del Santuario de la Verdad. De repente, un crujido en el suelo los hace detenerse.
+                Ante ellos, aparece un ornitorrinco con un porte orgulloso y una pose de definición,
+                como si hubiera sido cincelado en piedra. </p>
+
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'"
+                    >De coña...
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Miguel el Ornitorrinco: </b><i>(Con voz musculosamente resonante )</i></p>
+                <p>— ¡Saludos, valientes viajeros! Soy Miguel, el Ornitorrinco en Definición,
+                    guardián de los secretos más profundos del santuario. </p>
+
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Con tono sarcástico )</i></p>
+                    <p>— ¡Claro! Un ornitorrinco tallado en definición. ¿Qué sigue, un unicornio fosforescente? </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap09_Ornitorinco1.html" class="button">¿Esto que es?</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Ornitorrinco03.png " alt="Ornitorrinco">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

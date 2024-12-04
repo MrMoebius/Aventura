@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestArco.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b><i>Pero en ese momento, algo cambió en los ojos de Peter.</i></b></p>
+            <p><b><i>La reverencia dio paso a una determinación férrea. Sabía que solo él podía detenerla.</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >....
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p><b><i>Con el corazón ardiendo de coraje y la mente enfocada en el objetivo,
+                            se preparó para la batalla más difícil de su vida.</i></b></p>
+                <p><b><i>Lumina, la diosa de la luz y la oscuridad, estaba ante él. Era su destino, y no iba a
+                            huir.</i></b></p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'; 
+                    getElementById('popupIzq').style.display='block';
+                    getElementById('popupCen').style.display='block'"
+                    >....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>Peter apretó los puños, y sin apartar la mirada de Lumina, sus palabras fueron
+                                claras</i></b></p>
+                    <p><b>Peter: </b><i>(Con voz firme)</i></p>
+                    <p>— Este es el final, Lumina!</p>
+                    <p>— ¡Te detendré, cueste lo que cueste!"</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC19Apelea.html" class="button">Avanzar</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemEscudo.png" alt="Escudo">
+                    
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                <img src="/src/ImagensRender/ItemMacheteMejorado.png " alt="Machete">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de derecha(oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:Block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/LuminaLigth01.png" alt="Lumina">
+        </div>
+    </div>
+</body>
+
+</html>

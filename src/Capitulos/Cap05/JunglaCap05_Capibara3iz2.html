@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest19.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(Con tono sarcástico)</i></p>
+            <p>— Otro cofre. Ojalá tuviera suerte esta vez. </p>
+            <p><i>Le das una patada</i></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Alohomora
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p>¡Has abierto el cofre!</p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupDer').style.display='block'">Flipar infinito
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i> "Al abrir el cofre, dentro encuentra un arma mejorada."</i></p>
+                    <p>Que suerte! Pero el camino está bloqueado por las telarañas</p>
+                    <div class="button-container">
+                        <a href="JunglaCap05_Capibara3.html " class="button">Volver</a>
+
+                    </div>
+                </div>
+                <!-- El popup para la imagen de derecha(oculto por defecto) -->
+                <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                    <div class="popup-content">
+                        <img src="/src/ImagensRender/ItemMacheteMejorado.png " alt="Machete mejorado">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/temCofreTesoro02.png" alt=" ">
+        </div>
+    </div>
+</body>
+
+</html>

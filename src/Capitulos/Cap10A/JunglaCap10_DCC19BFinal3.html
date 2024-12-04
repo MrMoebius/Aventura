@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest05.jpeg");
+        }
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            
+            <p><b><i>Porque, como todo héroe sabe, la verdadera victoria no está en la batalla ganada, sino en el coraje de seguir adelante</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Continuar
+                </a>
+            </div>
+            
+            <div id="parte2" style="display:none;">
+                
+                <p><b><i>Y así, con la paz restaurada y las bendiciones de los guardianes en su corazón, 
+                    Peter se encaminó hacia un futuro incierto. Aunque la oscuridad había sido vencida, el camino 
+                    hacia la verdadera grandeza aún le esperaba, y con él, nuevos desafíos, aliados y aventuras que forjarían su legado.</i></b></p>
+
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                            >Continuar
+                        </a>
+                    </div>
+
+                    <div id="parte3" style="display:none;">
+
+                            <h1>Fin</h1>
+
+                            <div class="button-container">
+                                <a href="index.html" class="button">Reiniciar</a>
+                                <a href="/src/Capitulos/Cap09/JunglaCap09_Ornitorinco7.html" class="button">Buscar otro final</a>
+                            </div>
+
+                    </div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 7: ¡Niebla y Trampas!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest01.jpeg");
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capítulo 7: Niebla y Trampas.</p>
+            <p>Mientras siguen el camino hacia el santuario, una niebla espesa comienza a envolver el Jungla,
+                desorientando a <b>Peter, Don Capibara y Alex la Pantera Sabrosona</b>. </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter:</b><i> (Con tono sarcástico)</i></p>
+                <p>— ¡Genial! Como si todo esto no fuera suficientemente complicado,
+                    ahora una niebla espesa. ¿No hay un botón de "nivel fácil"?</p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupIzq').style.display='block'">Continuar
+                    </a>
+                </div>
+                <div id="parte3" style="display:none;">
+                    <p><b>Don Capibara:</b><i> (Serio)</i></p>
+                    <p>— La niebla es un obstáculo antiguo. Está diseñada para desviar a los
+                        que no tienen un propósito claro. </p>
+
+                    <div class="button-container">
+                        <a href="/src/Capitulos/Cap07/JunglaCap07_Niebla1.html" class="button">Caminar</a>
+
+                    </div>
+                </div>
+            </div>
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara05.png" alt="Don Capibara">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

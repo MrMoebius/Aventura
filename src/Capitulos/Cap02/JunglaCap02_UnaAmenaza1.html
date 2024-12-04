@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2: ¡Descubrimientos Inquietantes!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest09.jpeg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Lumina:</b></p>
+            <p>— El combate será por turnos. Cada vez que sea tu turno, tirarás un dado. El dado decidirá
+                si tu ataque es válido o no, y en algunos casos, si hay un multiplicador que lo haga más fuerte.</p>
+
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina:</b> <i>(Con voz seria)</i></p>
+                <p>— Si el dado indica un éxito, atacarás a la criatura. Si no, tu movimiento no tendrá efecto
+                    y deberás prepararte para el siguiente turno. Recuerda, no todo ataque es igual. Si
+                    obtienes una tirada perfecta, tu daño se multiplicará. ¡Esto es clave para ganar!</p>
+                <div class="button-container">
+                    <a href="JunglaCap02_UnaAmenaza2.html" class="button">Continuar</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+
+</body>
+
+</html>

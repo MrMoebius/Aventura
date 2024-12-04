@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest08.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b>Don Capibara: </b><i>(Firme )</i></p>
+            <p>— No podemos fallar. El destino de todos depende de esto.</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Alex la Pantera Sabrosona: </b><i>(Con elegante convicción)</i></p>
+                <p>— Entonces, debemos movernos rápido.
+                    No podemos dejar que Lumina recupere su cuerpo.</p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Felipe el Armadillo Heroico: </b><i>(Asintiendo heroicamente)</i></p>
+                    <p>— Exactamente. El tiempo corre en tu contra.
+                        La lucha final está cerca, pero con la ayuda de las bendiciones de las estatuas,
+                        tienes una oportunidad. Sin ellos, te enfrentarás a un enemigo demasiado grande para ti.</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC15.html" class="button">Continuar</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara01.png" alt="Don Capibara">
+                </div>
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Pantera02.png " alt="Pantera">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest07.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(Rodando los ojos)</i></p>
+            <p>— Perfecto. Un armadillo heroico que además mata dragones.
+                Esto mejora por momentos. </p>
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'">Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Felipe el Armadillo Heroico: </b><i>(Con seriedad heroica renovada)</i></p>
+                <p>Ahora que hemos aclarado eso… Decidme, ¿por qué buscáis el Santuario de la Verdad?
+                    ¿Quieres mi ayuda? </p>
+
+
+                <div class="button-container">
+
+                    <a href="/src/Capitulos/Cap10A/JunglaCap10_DCC10.html" class="button">Si, Necesito tu ayuda</a>
+                    <a href="/src/Capitulos/Cap10B/JunglaCap10_DCC20.html" class="button">No, creo que puedo solo</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+        </div>
+    </div>
+</body>
+
+</html>

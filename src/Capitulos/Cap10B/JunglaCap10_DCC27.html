@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainforestMuerte05.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(con voz temblorosa)</i></p>
+            <p><b><i>— ¡Por favor, Lumina! ¡Te amo! Volvamos juntos a casa!</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'; 
+                        getElementById('popupIzq').style.display='block'">
+                Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina: </b><i>(Con voz ntrecortada)</i></p>
+                <P>¡Ya no hay vuelta atrás!</P>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Abrir los ojos
+                    </a>                
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <P><b><i>Esto es... inevitable...</i></b></P>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC20Muerte.html" class="button">Huir</a>
+                        <a href="JunglaCap10_DCC28pelea.html" class="button">Pelear</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/LuminaDark03.png" alt="Lumina">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

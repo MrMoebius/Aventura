@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForestAltar03.jpeg"); 
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+                <p><b>Voz del Altar: </b></p>
+                <p>— <b>¡Correcto!</b> El principio es la unidad, el origen de todo. Has demostrado tu sabiduría, 
+                    joven viajero. Este conocimiento te ayudará en tu camino. </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Continuar
+                </a>
+            </div>
+            
+            <div id="parte2" style="display:none;">
+                
+                    <p>Los símbolos en el altar desaparecen, y Peter siente una extraña energía 
+                        recorrer su cuerpo. En ese instante, la hoja que lleva consigo comienza a brillar 
+                        suavemente, y los símbolos que había dibujado se actualizan por sí mismos con 
+                        una nueva forma, como si el propio altar le hubiera otorgado la respuesta. </p>
+                    
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block';
+                                getElementById('popupDer').style.display='block'"
+                            >Continuar
+                        </a>
+                    </div>
+        
+                    <div id="parte3" style="display:none;">
+                            <p><b>Lumina: </b></p>
+                            <p>— Has resuelto el acertijo, Peter. 
+                            Este será un valioso conocimiento para lo que viene. 
+                            Guarda esa respuesta con cuidado. (Sonríe con aprobación) </p>
+                            <p><i><b>Peter </b>guarda cuidadosamente la hoja en su mochila, 
+                                sintiendo que el acertijo ha marcado un avance en su misión.</i></p>
+                            <div class="button-container">
+                                <a href="/src/Capitulos/Cap04/JunglaCap04_Oculto.html" class="button"> Capitulo 4 </a>
+                        
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+                <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+                <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                    <div class="popup-content">
+                        <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                    </div>
+                </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

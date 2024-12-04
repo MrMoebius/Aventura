@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest18.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>El cofre se abre con un <i><b>clic.</b></i></p>
+            <p>Dentro, <B>Peter</B> encuentra un diario antiguo con notas sobre <B>Lumina</B> y un <B>criptex</B>.
+                También hay una <b>llave </b> pequeña, que parece ser la clave para algo más grande.</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                            getElementById('popupDer').style.display='block'"
+                    >Leer
+                </a>            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter:</b><i>(Leyendo el diario) </i></p>
+                <p>— ¿Qué tenemos aquí? "El fuego fatuo busca un cuerpo para su alma perdida...".
+                    Esto es interesante... muy interesante. </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                    </a>                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Lumina: </b><i>(Con voz tranquila)</i></p>
+                    <p>— Has encontrado algo importante, Peter.
+                        Tal vez ese diario te ayude a recordar quién eres realmente. </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto7.html " class="button">Pensar </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemDiario.png" alt="Diario">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCriptex.png" alt="criptex">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemLlave.png" alt="Lumina">
+                </div>
+            </div>
+
+        </div>
+
+    </div>  
+
+</body>
+
+</html>

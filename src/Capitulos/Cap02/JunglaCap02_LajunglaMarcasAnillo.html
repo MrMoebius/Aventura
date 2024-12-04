@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2: ¡Descubrimientos Inquietantes!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest07.jpeg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter</b> (Mirando el anillo en su dedo):</p>
+            <p>— Y este anillo... algo me dice que será clave para lo que venga.</p>
+
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block'
+                        getElementById('popupIzq').style.display='block';">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina</b> <i>(Sonriendo enigmáticamente):</i></p>
+                <p>— Ese anillo te protegerá en los desafíos que están por venir. Pero debes confiar en mí, Peter.
+                    Juntos encontraremos las respuestas.</p>
+                <div class="button-container">
+                    <a href="JunglaCap02_LajunglaMarcas1.html" class="button">Volver</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+
+    <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemAnillo01.png" alt="Anillo">
+        </div>
+    </div>
+
+</body>
+
+</html>

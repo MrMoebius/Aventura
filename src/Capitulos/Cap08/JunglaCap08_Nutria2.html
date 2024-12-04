@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8: ¡Ainhoa, la Nutria Dormilona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest05.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter </b><i>(Curioso)</i></p>
+            <p>— ¿Entonces qué necesito? </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'">Escuchar.
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Ainhoa la Nutria Dormilona: </b><i>(Bostezando seriamente)</i></p>
+                <p>— Debes encontrar el Santuario de la Verdad. </p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                                getElementById('popupIzq').style.display='block';
+                                getElementById('popupCen').style.display='block'">....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Lumina: </b><i>(Con voz suave)</i></p>
+                    <p>— No escuches sus palabras, Peter.
+                        Mi intención no es dañarte. Solo busco paz, y tú puedes darme eso.</p>
+                    <p><b>Alex la Pantera Sabrosona: </b><i>(Elegantemente firme)</i></p>
+                    <p>— Debes confiar en nosotros, <b>Peter</b>. <b>Lumina</b> no te ha dicho toda la verdad. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap08_Nutria3.html" class="button">Pensaré en ello.</a>
+
+                    </div>
+                </div>
+            </div>
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Nutria01.png" alt="Nutria">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Pantera01.png" alt="Pantera">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

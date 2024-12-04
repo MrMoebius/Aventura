@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainforestMuerte05.jpeg");
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b><i>¡Has Derrotado a Lumina!</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >....
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina: </b><i>(Casi un susurro)</i></p>
+                <p>— Quiero que sepas <b>Peter</b>... que te perdono, sé que aguantaste
+                    muchas cosas y estuviste ahí para mí. Quiero que vivas por mí.</p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">
+                    ....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+                    <p><b>Peter: </b><i>(volviendo a la realidad)</i></p>
+                    <p>— Ya me acuerdo de todo… realmente… fui yo el que te hice esto.</p>
+                    <p>— Yo te maté… lo siento mucho</p>
+                    <p>— Voy a entregarme a la policía y vivir por ti… Lumina.</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC29FinA1.html" class="button">Despertar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- El popup para la imagen de derecha(oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/LuminaDark04.png" alt="Lumina">
+        </div>
+    </div>
+
+</body>
+
+</html>

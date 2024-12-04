@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest10.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><span>La Prueba del espejo de la verdad</span></p>
+            <p><b><i>Tras salir de la prueba se un ambiente siniestro ya que ahora
+                        que lo pensaba Peter, Lumina hace tiempo que no estaba </i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'; 
+                        getElementById('popupIzq').style.display='block';
+                        getElementById('popupCen').style.display='block';">Inquieto
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter: </b><i>(Con tono preocupado)</i></p>
+                <p>— ¿Oye y Lumina…? </p>
+                <p><b>Todos los animales</b></p>
+                <p><b><i>— Ya te has dado cuenta.. hace tiempo que no está contigo,
+                            para ser exactos desde que entraste, ya que entrar aqui le daba el poder de liberarse.
+                        </i></b></p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Hablar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Tono de miedo)</i></p>
+                    <p>— ¿A lo hecho pecho, no?</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC18.html" class="button">Continuar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de derecha(oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Capibara01.png" alt="Don Capibara">
+        </div>
+    </div>
+
+
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Pantera04.png " alt="Pantera">
+        </div>
+    </div>
+
+    <!-- El popup para la imagen del centro (oculto por defecto) -->
+    <div id="popupCen" class="popup-container-centro" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Ornitorrinco02.png " alt="Ornitorrinco">
+        </div>
+    </div>
+
+</body>
+
+</html>

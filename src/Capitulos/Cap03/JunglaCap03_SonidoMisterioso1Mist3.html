@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestAltar03.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Lumina:</b> <i>(Con una expresión seria)</i></p>
+            <p>— Este es un acertijo ancestral, Peter. Tienes cinco intentos para resolverlo.
+                Si fallas, algo terrible sucederá. Lo que está en juego aquí es tu vida.
+                Debes ser cuidadoso. </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Continuar
+                </a>            
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p> <b>Voz del Altar: </b> </p>
+                <p>— Cinco intentos tendrás para resolver el acertijo,
+                    joven viajero. Si fallas, tu destino será sellado. </p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Pensando
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+                    <p>El acertijo parece más confuso cuanto más Peter lo piensa.
+                        Sin embargo, algo dentro de él le dice que tiene que adivinar
+                        una palabra que represente el concepto detrás de las pistas dadas.
+                        Un juego de adivinanza estilo ahorcado.
+                    </p>
+                    <p><i>La voz del altar vuelve a hablar. </i></p>
+                    <p><b><i>— Adivina la palabra oculta. Usa tus cinco intentos sabiamente. </i></b></p>
+                    <div class="button-container">
+                        <a href="JunglaCap03_SonidoMisterioso1Mist4.html " class="button"> Pistas? </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest08.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(Confuso, pero alarmado)</i></p>
+            <p>¿Cómo puedes estar tan seguro de que está volviendo? </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Preguntar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Felipe el Armadillo Heroico: </b><i>(Con tono heroicamente grave )</i></p>
+                <p>— El templo es un lugar antiguo.
+                    Aquí, el vínculo de Lumina con el mundo se vuelve más fuerte. Si no conseguimos
+                    detenerla antes de que recupere su forma física, se desatará una catástrofe, y
+                    todo será consumido por su poder. Tú, Peter, eres clave en este proceso.
+                    Pero no puedes enfrentarte a ella solo. El poder que guarda dentro de este
+                    santuario es demasiado grande para un solo ser.</p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Flipar
+                    </a>
+
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>Felipe da un paso hacia el altar, donde yace el Cristal de la Verdad,
+                                y lo mira con respeto.</i></b></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC13.html" class="button">Observar</a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

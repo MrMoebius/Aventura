@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest18.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter:</b><i> (Con voz inquieta)</i></p>
+            <p>— Este diario me ha dado una pista sobre algo...
+                sobre un misterio de esta jungla,
+                pero no me queda claro qué significa todo esto. </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'"
+                    >Continuar
+                </a>            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina:</b><i> (Con voz emocionada) </i></p>
+                <p>— ¡Eso está genial, Peter! Quizá estés más cerca de
+                    descubrir la verdad detrás de todo esto. </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                    </a>                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter </b><i> Guarda el diario y el criptex en su mochila,
+                            sintiendo que esta nueva información podría ser la
+                            clave para desentrañar los secretos de la jungla.
+                            Mientras tanto, el sonido de la jungla a su alrededor
+                            se intensifica, como si estuviera a punto de enfrentar
+                            una nueva amenaza.</i> </p>
+
+                    <div class="button-container">
+                        <a href="/src/Capitulos/Cap05/JunglaCap05_Capibara.html" class="button">Capitulo 5 </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2: ¡Descubrimientos Inquietantes!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url(/src/Fondos/RainfForest02.jpeg )
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capítulo 2: ¡Descubrimientos Inquietantes!</p>
+            <p><b>Peter : </b> avanza con cautela a través de la densa jungla, con Lumina flotando cerca,
+                iluminando el camino. La luz del ente proporciona algo de calma, pero el entorno sigue
+                siendo opresivo, lleno de sonidos desconocidos y sombras inquietantes.</p>
+            <p><b>Lumina: </b> (Agradable)</p>
+            <p>— ¿Cómo te encuentras, <b>Peter</b>?</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'
+                        getElementById('popupDer').style.display='block';">Continuar
+                </a>
+
+                <div id="parte2" style="display:none;">
+                    <div class="button-container">
+                        <a href="/src/Capitulos/Cap02/JunglaCap02_LajunglaMarcas.html" class="button">
+                            — Genial, considerando que no sé quién soy, realmente.</a>
+                        <a href="/src/Capitulos/Cap02/JunglaCap02_LajunglaMarcas.html" class="button">
+                            — Mi madre siempre decía que no hablara con extraños...
+                            y menos en mitad de una jungla. (Seguramente) </a>
+                        <a href="/src/Capitulos/Cap02/JunglaCap02_LajunglaMarcas.html" class="button">
+                            — Bien, bien... aunque todo me pica como si hubiera dormido en un hormiguero. </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src=" " alt=" ">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

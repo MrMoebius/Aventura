@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8: ¡Ainhoa, la Nutria Dormilona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest05.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b><i>Continuando el Camino...</i></b></p>
+            <p>Guiado por Don Capibara, Alex la Pantera Sabrosona, y ahora con la sabiduría
+                de Ainhoa la Nutria Dormilona, <b>Peter</b> decide continuar su viaje hacia el
+                Santuario de la Verdad. En el camino, deben enfrentar trampas ocultas y
+                desactivar mecanismos antiguos. </p>
+
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter </b><i>(Desactivando una trampa.)</i></p>
+                <p>— Vale, esta es la última. Espero que el santuario esté cerca. </p>
+
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'; 
+                    getElementById('popupDer').style.display='block'">....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Ainhoa la Nutria Dormilona: </b><i>(Sonriendo bostezonamente)</i></p>
+                    <p>— Estás más cerca de lo que crees, Peter. Sigue adelante y encontrarás lo que buscas. </p>
+
+                    <div class="button-container">
+                        <a href="/src/Capitulos/Cap09/JunglaCap09_Ornitorinco.html" class="button">Capitulo 9</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Nutria01.png" alt="Nutria">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemTrampa01.png" alt="Trampa">
+        </div>
+    </div>
+</body>
+
+</html>

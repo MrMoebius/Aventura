@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest20.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <h2>El Dilema del Camino </h2>
+            <p>Después de la conversación con <b>Don Capibara, Peter </b><i> enfrenta a una
+                    bifurcación en el camino. A la izquierda, un sendero oscuro que parece más
+                    peligroso, con el rugido de criaturas en la distancia. A la derecha, el
+                    sendero parece más tranquilo, aunque sigue envuelto en misterio.
+                    <b>Don Capibara</b> señala ambos caminos. </p></i>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'"
+                    >Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p> <b>Don Capibara: </b> </p>
+                <p>— El camino de la izquierda es peligroso, pero puede ofrecerte recompensas.
+                    Un cofre se encuentra más allá de una criatura sencilla. Si lo derrotas,
+                    podrás obtener un nuevo equipo. Sin embargo, el camino a la derecha es el que
+                    te llevará hacia lo que buscas. Elige con sabiduría. </p>
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                        getElementById('popupDer').style.display='block'"
+                        >Continuar
+                    </a>           
+                </div>
+
+            <div id="parte3" style="display:none;">
+
+                <p><b>Peter: </b> <i>(Pensando en voz alta)</i> </p>
+                <p>— Hmm, si elijo el camino de la izquierda, podría obtener algo útil,
+                    pero el otro camino sigue con la historia, ¿no? </p>
+                <p><b>Lumina:</b><i> (Con voz tranquila) </i></p>
+                <p>— No hay prisa, Peter. La decisión es tuya. Pero ten en cuenta que la jungla
+                    es impredecible, y cada elección podría cambiar el curso de tu destino. </p>
+                <div class="button-container">
+                    <a href="JunglaCap05_Capibara3iz.html " class="button">Camino a la Izquierda</a>
+                    <a href="JunglaCap05_Capibara3de.html" class="button">Camino a la Derecha</a>
+                </div>
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Capibara05.png" alt="Don Capibara">
+        </div>
+    </div>
+</body>
+
+</html>

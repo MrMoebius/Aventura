@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestTemplo01.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(Intrigado)</i></p>
+            <p> Eso suena genial, Miguel. ¿Pero cómo lo hacemos? ¿Qué necesitamos? </p>
+
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                getElementById('popupCen').style.display='block'">Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Miguel el Ornitorrinco: </b><i>(Mirando musculosamente a su alrededor, pensativo)</i></p>
+                <p>— Dentro del templo está el cristal de la verdad, un artefacto antiguo.
+                    Es capaz de revelar las verdaderas intenciones y deshacer cualquier vínculo
+                    mágico. Pero hay un problema: está protegido por una barrera mágica. </p>
+                <br>
+                <p><b><i>Guiados por Miguel, el grupo se acerca a un imponente templo.
+                            Una brillante barrera bloquea la entrada.</i></b></p>
+
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Examinar.
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Examinando la barrera, curioso)</i></p>
+                    <p>— ¡Así que este es el Templo de la Verdad. ¿Cómo desactivamos la barrera, <b>Miguel</b>?</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap09_Ornitorinco3.html" class="button">¿Esto que es?</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Ornitorrinco02.png " alt="Ornitorrinco">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

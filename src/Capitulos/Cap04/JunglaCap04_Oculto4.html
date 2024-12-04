@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForest18.jpeg"); 
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>El Acertijo del Cofre </p>
+            <p><i><b>"Para abrir este cofre, debes adivinar una palabra. 
+                Tienes 5 intentos. Si fallas, el cofre se cerrará para siempre." </b></i></p>
+                
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Obsebvar
+                </a>            </div>
+            
+            <div id="parte2" style="display:none;">
+                        <p><i>Al lado de la inscripción, Peter ve un conjunto de letras que forman 
+                            un espacio en blanco para adivinar la palabra </i></p>
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                            >Leer
+                        </a>
+                    </div>
+        
+                    <div id="parte3" style="display:none;">
+
+                            <p><i><b>_ _ _ _ _ _</b> </i></p>
+                            
+                            <div class="button-container">
+                                <a href="JunglaCap04_Oculto5.html " class="button"> Pistas</a>
+                        
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/temCofreTesoro02.png" alt="Cofre">
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+

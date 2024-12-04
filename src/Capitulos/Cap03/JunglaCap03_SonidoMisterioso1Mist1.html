@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForestAltar03.jpeg"); 
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            
+            <p><b>Peter:</b> <i>(Mirando los símbolos con curiosidad)</i>   </p>
+            <p>— ¿Qué significa todo esto? ¿Qué están intentando decirme?</p>
+            <div class="button-container">
+                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                
+                <p><b>Lumina:</b> <i>(Con tono misterioso)</i> </p>
+                <p>— Lo descubrirás cuando estés listo, Peter. Por ahora, 
+                    lo único que puedo decir es que este altar está relacionado con lo que buscas, 
+                    con <b>mi propósito</b>. 
+                    Pero no entiendas todo de inmediato. El camino no es lineal. </p>
+                    <div class="button-container">
+                        <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                    </div>
+                    
+                    <div id="parte3" style="display:none;">
+                        <p><b>Peter: </b><i> (Tomando una hoja grande de la jungla y 
+                            una rama como lápiz improvisado)</i></p>
+                        <p>— Bueno, voy a intentar recordar esto... Quizás más adelante pueda entenderlo mejor. 
+                            (Dibuja los símbolos cuidadosamente en la hoja, 
+                            tomando nota de cada uno mientras los observa con atención.) </p>
+                        <div class="button-container">
+                            <a class="button" onclick="mostrarContenido('parte4')">Continuar</a>
+                        </div>
+                            <div id="parte4" style="display:none;">
+                                
+                                <p>— Buena idea. No te olvides de estos símbolos. 
+                                    Podrán ayudarte cuando menos lo esperes. 
+                                    El tiempo revelará su verdadero significado.</p>
+                                <div class="button-container">
+                                    <a href="JunglaCap03_SonidoMisterioso1Mist2.html" class="button"> Observar </a>
+                                </div>
+                            </div>   
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function mostrarContenido(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

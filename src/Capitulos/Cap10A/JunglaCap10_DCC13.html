@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestTemplo01.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Felipe el Armadillo Heroico: </b><i>Heroicamente Solemne</i></p>
+            <p>— Mi misión como guardián es velar por este lugar,
+                pero ahora, te encomiendo una misión aún mayor. Debes buscar las estatuas de los
+                guardianes. Ellos son los únicos que tienen el poder de ayudarte en la lucha que
+                se avecina. Si logras reunirlos, juntos podréis derrotarla antes de que se
+                recupere por completo.</p>
+
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter: </b><i>(Con determinación)</i></p>
+                <p>— ¿Y si no logro reunirlos a tiempo? </p>
+                <p><b><i>Se detiene un momento, mirando a sus compañeros antes de continuar.</i></b></p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Felipe el Armadillo Heroico: </b><i>(Mirando a Peter heroicamente)</i></p>
+                    <p>— Si no lo haces, Peter, tendrás que enfrentarte a Lumina solo.
+                        Y créeme, ni siquiera tu fuerza será suficiente para detener a una
+                        diosa en su pleno poder.</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC14.html" class="button">Continuar</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

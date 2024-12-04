@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForest19.jpeg"); 
+        }
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>Decides tomar el camino de la izquierda.</p>
+            <p> Peter se adentra más en la jungla  </p>
+            
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                            getElementById('popupDer').style.display='block'"
+                    >Continuar
+            </a>           
+            </div>
+            
+            <div id="parte2" style="display:none;">
+                <p>Te has encontrado con una <b>Araña de gran tamaño.</b></p>
+                <p> un enemigo <i>"pequeño"</i> pero agresivo </p>
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupIzq').style.display='block'"
+                            >Continuar
+                        </a>                    
+                    </div>
+        
+                    <div id="parte3" style="display:none;">
+    
+                        <p><b>Peter: </b><i>(Sacando su machete oxidado y poniéndose en guardia)</i></p>
+                        <p>— Pues aquí vamos. Vamos a ver qué tan difícil es esto. </p>
+                            <div class="button-container">
+                                <a href="JunglaCap05_Capibara3iz1.html" class="button">Luchar</a>
+                                <a href="JunglaCap05_Capibara3iz11.html" class="button">Huir</a>
+    
+                            </div>
+                    </div>
+            </div>
+            
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/EnemigoAraña.png" alt="Araña">
+                </div>
+            </div>
+
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemMacheteOxidado.png" alt="Machete">
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+</body>
+
+</html>

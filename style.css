@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'CharmReg';
+    src: url("/Fuentes/Charm-Regular.ttf");
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.bg {
+    /* Propiedades de la imagen */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Efecto de interactividad */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+    flex-direction: column;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 20px;  /* Espacio debajo del h1 */
+    background: linear-gradient(rgb(83, 195, 31), rgb(28, 134, 9), rgb(0, 93, 19));
+    background-clip: text;      /*donde aplicamos el gradiente*/
+    -webkit-background-clip: text;    /*Compatibilidad de navegador*/
+    color: transparent;  /*transparentar letras coger color del fondo*/
+}
+
+h2 {
+    color: rgb(222, 212, 212);
+    /* Cambia el color del texto */
+    font-size: 26px;
+    text-align: center;
+}
+
+p {
+    font-family: 'CharmReg', 'sans-serif';
+    font-size: 16px;
+    color: whitesmoke;
+    align-items: center;
+    line-height: 120%;
+    /* espacio de interlineado en porcentaje*/
+}
+
+p.title {
+    font-size: 18px;
+    color: whitesmoke;
+    align-items: center;
+    line-height: 200%;
+}
+
+p.cap {
+    font-size: 40px;
+    color: whitesmoke;
+    align-items: center;
+    line-height: 150%;
+    /* espacio de interlineado en porcentaje*/
+}
+
+/*  text-decoration: 2px wavy underline gold; */
+
+.container {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    /* Centrar la contenedor horizontalmente */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para resaltar el texto */
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(36, 33, 33, 0.5);
+    padding: 20px;
+    border-radius: 25px
+}
+
+.button-container a,
+.button-container button,
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    background-color: #004d00;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(10, 85, 0);
+    cursor: grab; 
+}
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pequeñica {
+    max-width: 50%;
+    height: auto;
+}
+
+.death-text {
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+}
+
+span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    /*wrap	El texto se ajusta para ocupar el ancho del contenedor, y se dividirá en varias líneas si es necesario.
+    nowrap	El texto no se ajusta, por lo que sobresale del contenedor si es más largo que su ancho.
+    balance	El texto se ajusta de forma uniforme, evitando líneas muy largas o muy cortas. Ideal para títulos.
+    pretty	El texto se ajusta de forma uniforme, minimizando la diferencia de longitud de las líneas. Ideal para párrafos.
+    auto	El navegador determina que tipo de ajuste aplicar.*/
+    border-right: 4px solid;
+    /* width: 12ch; */
+    /* animation: typing 2s steps(12), blink 0.5s infinite step-end alternate; */
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/*------------------- Pop up de personajes---------------------------*/
+
+/* Clase para el contenedor de las imágenes emergentes desde la derecha */
+.popup-container-derecha {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    /* Asegura que esté encima de otros elementos */
+    right: -20%;
+    /* Inicia fuera de la pantalla a la derecha */
+    top: 30%;
+    /* Ajusta la posición vertical */
+    transform: translate(0, -50%);
+    /* Centra el popup verticalmente */
+    width: 25%;
+    /* Ocupa el % del ancho total de la página */
+    height: auto;
+    /* Ajusta el tamaño de acuerdo al contenido */
+    background-color: rgba(0, 0, 0, 0);
+    /* Fondo negro con transparencia ajustable */
+    animation: slideInRight 0.5s forwards;
+    /* Animación de aparición desde la derecha */
+}
+
+/* Clase para el contenedor de las imágenes emergentes desde la izquierda */
+.popup-container-izquierda {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: -20%;
+    /* Inicia fuera de la pantalla a la izquierda */
+    top: 80%;
+    transform: translate(0, -50%);
+    width: 25%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    animation: slideInLeft 0.5s forwards;
+}
+
+/* Clase para el contenedor de las imágenes emergentes desde el centro */
+.popup-container-centro {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Clase para el contenido del popup */
+.popup-content {
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    background: transparent;  /* Fondo del popup transparente */
+    padding: 0; 
+}
+
+/* La imagen dentro del popup */
+.popup-content img {
+    width: 100%;  /* La imagen ocupa el 100% del contenedor del popup */
+    height: auto;  /* Mantener la proporción de la imagen */
+}
+
+/* Animación de aparición desde la derecha */
+@keyframes slideInRight {
+    from {
+        right: -20%;  /* Empieza fuera de la pantalla a la derecha */
+    }
+
+    to {
+        right: 0;  /* Termina en su posición final dentro de la pantalla */
+    }
+}
+
+/* Animación de aparición desde la izquierda */
+@keyframes slideInLeft {
+    from {
+        left: -20%;  /* Empieza fuera de la pantalla a la izquierda */
+    }
+
+    to {
+        left: 0;  /* Termina en su posición final dentro de la pantalla */
+    }
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;  /* Comienza transparente */
+    }
+
+    to {
+        opacity: 1;  /* Termina totalmente visible */
+    }
+}
+
+/* Mostrar los popups al hacer clic en el botón */
+body.loaded .popup-container-derecha,
+body.loaded .popup-container-izquierda,
+body.loaded .popup-container-centro {
+    display: block;
+}
+
+/*----------Responsivo--------------*/
+
+/* Estilos para pantallas menores de 480px (móviles) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;  /* Reducir más el tamaño de fuente */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;  /* Usar todo el ancho disponible */
+    }
+
+    .content {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .button-container a, .button-container button, .button {
+        padding: 6px 12px;
+        margin: 6px 3px;
+    }
+
+    .small-image {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest13.jpeg");
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>Has entrado en el Camino de la desviación.</p>
+            <p>Has encontrado un cofre de Pociones.</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block';
+                        getElementById('popupCen').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p>El cofre contiene varias pociones curativas. <br>
+                    Tras tomar las pociones, un enemigo te ha visto! <br>
+                    !No puedes escapar!</p>
+                <p>Te preparas para el combate.</p>
+                <div class="button-container">
+                    <a href="JunglaCap03_SonidoMisterioso1Desv1.html" class="button">Luchar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemCofre01.png" alt="Cofre">
+        </div>
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/EnemigoEscorpion.png " alt="Escorpion">
+        </div>
+    </div>
+
+    <!-- El popup para la imagen del centro (oculto por defecto) -->
+    <div id="popupCen" class="popup-container-centro" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemPotiCura.png" alt="Pociones">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest15.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capitulo 04: Oculto</p>
+            <h2>
+                <p><i>bzzzz... Bzzzz....</i></p>
+            </h2>
+            <p><b>Peter:</b> <i>(Examinando el anillo de piedra)</i></p>
+            <p>— ¿Qué diablos...? ¿Por qué zumbas ahora, anillo? </p>
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p><b>Lumina: </b><i>(Flotando cerca) </i></p>
+                <p>— El anillo responde a algo, Peter.
+                    Puede estar indicándote una pista importante.
+                    Deberías estar atento. </p>
+                <div class="button-container">
+                    <a class="button" onclick="getElementById('parte3').style.display='block'">Ehh..?
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i><b>Peter </b>(Apuntando el anillo hacia el árbol entre los dos caminos) </i></p>
+                    <p>— ¡Ahí va de nuevo! Parece que ese árbol tiene algo especial.
+                        A ver qué tienes para mí, viejo amigo. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto1.html " class="button">Revisar</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemAnillo01.png" alt="Anillo">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- El popup para la imagen del centro (oculto por defecto) -->
+
+
+
+</body>
+
+</html>

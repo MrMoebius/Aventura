@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestAltar03.jpeg");
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p>Has entrado en <b>Camino del Misterio</b></p>
+            <p><b>Peter</b> y <b>Lumina</b> siguen el camino, sintiendo
+                que el canto se intensifica a medida que avanzan.
+                De repente, llegan a un pequeño claro en la jungla. </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p>Allí, Peter encuentra un altar antiguo cubierto de musgo y enredaderas.
+                    Los símbolos grabados en la piedra comienzan a brillar suavemente,
+                    como si el altar los estuviera invitando a acercarse.</p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupDer').style.display='block'">Continuar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+                    <p><b>Lumina:</b></p>
+                    <p>— Este lugar... tiene una energía poderosa. Es antiguo.
+                        Los símbolos que ves aquí están escritos en un idioma que ya no se usa,
+                        pero aún contienen fragmentos de sabiduría.</p>
+                    <div class="button-container">
+                        <a href="JunglaCap03_SonidoMisterioso1Mist2.html" class="button">Continuar</a>
+                    </div>
+                </div>
+
+                <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+                <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                    <div class="popup-content">
+                        <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

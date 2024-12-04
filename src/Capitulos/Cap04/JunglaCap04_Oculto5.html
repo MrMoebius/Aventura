@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest18.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><i><b>Anuncio el amanecer, pero no soy un reloj.</b></i></p>
+            <p><i><b>Canto y no tengo boca.</b></i></p>
+            <p><i><b>Mi morada está cerca del sol, pero no soy un planeta.</b></i></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Observar
+                </a>            </div>
+
+
+            <div id="parte2" style="display:none;">
+                <p><i>Al lado de la inscripción, Peter ve un conjunto de letras que forman
+                        un espacio en blanco para adivinar la palabra </i></p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Leer
+                    </a>                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i><b>_ A _ A _ _</b> </i></p>
+                    <p><i><b>Peter: </b> (Pensando) </i></p>
+                    <p>— ¡Vamos a ver qué tal! No tengo mucho tiempo para equivocarme… </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto51.html " class="button">BATATA </a>
+                        <a href="JunglaCap04_Oculto51.html " class="button">PATATA </a>
+                        <a href="JunglaCap04_Oculto51.html " class="button">TABACO </a>
+                        <a href="JunglaCap04_Oculto6.html " class="button">PAJARO </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/temCofreTesoro02.png" alt="Cofre">
+        </div>
+    </div>
+</body>
+
+</html>

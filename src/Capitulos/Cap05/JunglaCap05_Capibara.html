@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest20.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capítulo 5: Emilio, el Capibara con Bigote y Pajarita Elegante</p>
+            <p><i>Peter sigue adentrándose en la jungla, guiado por el sonido misterioso
+                    que parece intensificarse a cada paso. De repente, el sonido se detiene
+                    por completo. Peter se detiene, alerta, y ante él aparece una figura inesperada:
+                    un capibara con un elegante bigote y una pajarita. </i> </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                    getElementById('popupDer').style.display='block'">WTF?
+                </a>
+            </div>
+
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter: </b><i> (Con tono sarcástico) </i></p>
+                <p>— ¡Genial! Primero un capibara con bigote.
+                    Esto no puede ser real. ¿Qué sigue? ¿Un tigre con gafas? </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Flipar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Don Capibara: </b> (Con voz profunda y serena) </p>
+                    <p>— Buenas tardes, joven viajero. Mi nombre es <b>Capibara.</b>
+                        De apellido <b>Don. </b> Estoy aquí para ayudarte en tu camino. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap05_Capibara2.html" class="button">Flipar mas</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara01.png" alt="Don Capibara">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

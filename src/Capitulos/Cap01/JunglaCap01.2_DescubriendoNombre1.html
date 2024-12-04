@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: ¡El Despertar!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url(/src/Fondos/Choza01.jpeg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="content">
+
+            <p>En un rincón de la choza ve un machete oxidado, con la hoja mellada y vieja. <br>
+                Aunque no parece muy útil, lo toma como protección.</p>
+            <p>Mientras explora, Lumina flota cerca, observándolo.</p>
+            <p><b>Lumina:</b></p>
+            <p>— ¿Te sientes perdido, verdad? No te preocupes. Pronto todo tendrá sentido.</p>
+
+            <a class="button" 
+            onclick="getElementById('parte2').style.display='block'
+                    getElementById('popupIzq').style.display='block';">Continuar
+            </a>
+            <div id="parte2" style="display:none;">
+
+                <p><b>Lumina:</b> -- Por cierto, ¿Cuál es tu nombre?.</p>
+                <p><b>..... :</b> — Mi nombre... es... "Peter"</p>
+                <p><b>Lumina:</b> <i>(Con un tono enigmático)</i> — Lo es… por ahora.</p>
+
+                <a class="button" 
+                onclick="getElementById('parte3').style.display='block'; 
+                        getElementById('popupCen').style.display='block';">Continuar
+                </a>
+                <div id="parte3" style="display:none;">
+
+                    <p>Peter siente que todo en este lugar tiene un propósito, pero no logra entender cómo está
+                        conectado.
+                    </p>
+                    <div class="button-container">
+                        <a href="JunglaCap01.3_Cofre.html " class="button">¿Que es eso?</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupDer" class="popup-container-derecha" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+            
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemMacheteOxidado.png" alt="Machete">
+                </div>
+            </div>
+
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCofre01.png" alt=" ">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

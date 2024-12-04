@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest08.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Felipe el Armadillo Heroico: </b><i>(con una mirada heroicamente grave)</i></p>
+            <p>— El ambiente en el santuario se llena de tensión, pues lo que está por
+                revelarse es de gran importancia para el futuro de todos.</p>
+            <p>— Has demostrado ser digno de enfrentar lo que vendrá, <b>Peter </b>. Pero hay algo más
+                que necesitas saber. La verdad no termina aquí.
+                <b>Lumina</b>… no es solo una entidad que busca apoderarse de tu cuerpo.
+            </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'">Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b><i>Felipe observa a todos los presentes antes de continuar</i></b></p>
+
+                <p><b>Lumina</b> fue una diosa, una <b>fuerza primordial</b> que aterrorizó el mundo antiguo.
+                    Los cinco animales, en su momento, nos unimos para sellarla, para impedir
+                    que su oscuridad se extendiera por todo el mundo. Pero su vínculo con el mundo
+                    no ha desaparecido por completo. Su <b>escencia</b> ha estado aguardando su oportunidad
+                    para regresar. Y ahora, dentro de este santuario, está recobrando su verdadero
+                    poder, su cuerpo original, con la ayuda de tus lazos</p>
+
+                <div class="button-container">
+                    <a href="JunglaCap10_DCC12.html" class="button">Continuar</a>
+                </div>
+
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest07.jpeg");
+        }
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b><i>De repente, una figura surge frente a ellos: 
+                un armadillo con una armadura brillante, su porte imponente 
+                y su mirada decidida. </i></b></p>
+
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'"
+                    >Flipin maximus
+                </a>
+
+            </div>
+            
+            <div id="parte2" style="display:none;">
+                <p><b>Felipe el Armadillo Heroico: </b><i>(Con voz firme y heroica )</i></p>
+                <p>— ¡Alto ahí, viajeros! Soy Felipe, el Armadillo Heroico, guardián del Santuario 
+                    de la Verdad. Decidme, ¿qué os trae hasta este lugar sagrado? </p>
+
+
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                            >Deslumbrado
+                        </a>
+                    </div>
+
+                    <div id="parte3" style="display:none;">
+
+                        <p><b>Peter: </b><i>(Sarcástico, cruzando los brazos.)</i></p>
+                        <p>—  ¡Fantástico! Ahora un armadillo con armadura. ¿Qué sigue? ¿Un dragón parlante?</p>
+
+                            <div class="button-container">
+                                <a href="JunglaCap09_Ornitorinco6.html" class="button">Continuar</a>
+
+                            </div>
+                    </div>
+            </div>
+
+            
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+
+
+        </div>
+    
+    </div>
+
+</body>
+
+</html>

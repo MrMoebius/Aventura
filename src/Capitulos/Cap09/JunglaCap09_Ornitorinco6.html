@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest07.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Felipe el Armadillo Heroico: </b><i>(Esbozando una sonrisa heroica)</i></p>
+            <p>— ¿Esas ratas con alas? No, esos ya no. Me encargué de ellos hace tiempo.</p>
+
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b><i>Un momento de silencio incómodo, hasta que <b>Alex la Pantera Sabrosona</b> rompe a
+                            reír.</i></b></p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                        getElementById('popupCen').style.display='block'"
+                        >...
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Alex la Pantera Sabrosona: </b><i>(Riendo elegantemente))</i></p>
+                    <p>— Me cae bien este tipo. </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap09_Ornitorinco7.html" class="button">Ehh?!!</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+
+                    <img src="/src/ImagensRender/Pantera01.png " alt="Pantera">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

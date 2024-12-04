@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest08.jpeg");
+        }
+
+        span {
+            width: 12ch;
+            /* ajustar ancho de palabra */
+            animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capitulo 10: Decisiones.</p>
+
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter: </b><i>(Suspirando y dejando de lado su sarcasmo)</i></p>
+                <p>— Está bien, Felipe. La verdad es que estamos en una búsqueda para encontrar respuestas.
+                    Hay misterios que rodean a nuestro mundo y creemos que el Santuario de la Verdad puede
+                    tener las claves que necesitamos.</p>
+                <p><b><i>Se detiene un momento, mirando a sus compañeros antes de continuar.</i></b></p>
+
+                <div class="button-container">
+
+                    <a class="button" onclick="getElementById('parte3').style.display='block'">Hablar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Con determinación)</i></p>
+                    <p>— No solo se trata de nosotros. Hay un gran peligro acechando, y necesitamos
+                        entender lo que está sucediendo para poder enfrentarlo.
+                        Así que, si puedes ayudarnos, te lo agradeceríamos.</p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC11.html" class="button">Continuar</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

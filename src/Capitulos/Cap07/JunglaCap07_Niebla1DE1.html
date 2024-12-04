@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 7: ¡Niebla y Trampas!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainForestSantuario.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>Encuentro en el Santuario </p>
+
+            <p>Finalmente, la niebla comienza a disiparse y
+                encuentran un santuario antiguo. Inscripciones y símbolos
+                cubren las paredes, y en el centro, un pedestal con una inscripción
+                que parece brillar tenuemente. </p>
+
+            <div class="button-container">
+
+                <a class="button" onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'">Alucino pepinillos!
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p> <b>Alex la Pantera Sabrosona:</b><i> (Impresionada)</i></p>
+                <p>Hemos llegado. Este es el corazón de la jungla.
+                    Aquí se revelarán los secretos de Lumina y tu verdadero propósito, <b>Peter.</b> </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupCen').style.display='block';
+                            getElementById('popupDer').style.display='block'">Genial!
+                    </a>
+                </div>
+
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter</b><i>(Observando a su alrededor))</i></p>
+                    <p>— Vale, entonces. Vamos a ver qué
+                        esconden estas inscripciones. </p>
+                    <p><b>Peter</b> se acerca al pedestal y coloca la llave en una ranura.
+                        El pedestal se abre, revelando un antiguo manuscrito. </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap07_Niebla1DE2.html" class="button">Leer</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Pantera05.png" alt="Pantera">
+                </div>
+            </div>
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemLlave.png" alt="Llave">
+                </div>
+            </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemManuscrito.png" alt="Manuscrito">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

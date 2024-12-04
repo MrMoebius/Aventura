@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 7: ¡Niebla y Trampas!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest02.jpeg");
+        }
+        span {
+            width: 18ch; /* ajustar ancho de palabra */
+            animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
+            white-space: AUTO;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="title"><span >500 years later...</span></p>
+            
+
+            <p> <b>Peter:</b>(Agotado)</p>
+            <p>Has derrotado al SemiBoss <b>"Gargola de Jade"</b></p>
+
+            <div class="button-container">
+
+                <a class="button" onclick="mostrarContenido('parte2')">SemiBoss??</a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p> <b>Peter:</b><i>(Exhausto)</i></p>
+                <p>Necesito descansar.</p>
+                <div class="button-container">
+                    <a class="button" onclick="mostrarContenido('parte3')">...???</a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter</b><i>(Confundido))</i></p>
+                    <p>— ¿No hay cofre esta vez?</p>
+                    <p>....</p>
+                    <p>— Otra vez ese ruido</p>
+                    <div class="button-container">
+                        <a href="JunglaCap07_Niebla1DE.html" class="button">Seguir ruido</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function mostrarContenido(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

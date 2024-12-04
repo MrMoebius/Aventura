@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest17.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b>Lumina:</b> <i> (Intrigante) </i></p>
+            <p>— Esa marca debe ser una pista. Observa bien el árbol. </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Revisar mas
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p>Peter: <b></b> <i>(Mirando detrás del árbol)</i></p>
+                <p>— ¡Espera un momento...! ¡Un camino escondido! No estaba aquí antes</p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupDer').style.display='block'"
+                            >Woow...
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Lumina:</b><i>(Sonriendo amablemente) </i> </i></p>
+                    <p>— Parece que has encontrado el verdadero camino. Sigamos adelante. </p>
+                    <p>Con el anillo aún en la mano, Peter sigue el camino oculto detrás del árbol.
+                        A medida que avanza, la jungla se vuelve más densa y oscura.
+                        Las sombras se alargan, y los susurros en el aire parecen intensificarse. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto3.html " class="button">Caminar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- El popup para la imagen del centro (oculto por defecto) -->
+    <div id="popupCen" class="popup-container-centro" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemAnillo01.png" alt=" ">
+        </div>
+    </div>
+
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+</body>
+
+</html>

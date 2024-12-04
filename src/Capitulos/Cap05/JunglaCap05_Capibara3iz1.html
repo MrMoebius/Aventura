@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest19.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>25 years later!</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Vargame el señol
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p>¡Has derrotado a la Araña!</p>
+                <p>— Necesito descansar.</p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupIzq').style.display='block'"
+                        >Sentarse
+                    </a>                
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i>Te golpeas con un cofre escondido entre las raíces de un árbol.
+                            El cofre parece viejo, cubierto de símbolos misteriosos. </i></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap05_Capibara3iz2.html" class="button">Ouch!</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/temCofreTesoro02.png" alt="Cofre">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>

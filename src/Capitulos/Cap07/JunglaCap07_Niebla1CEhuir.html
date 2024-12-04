@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 7: ¡Niebla y Trampas!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest02.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>Te lo has pensado mejor.</p>
+            <p>Intentas huir.</p>
+
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'">No hagas ruido...
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b><i>Crack!!</i></b></p>
+                <p> <i>Has partido una ramita.</i></p>
+                <div class="button-container">
+
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Te han visto!!
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>Corre!!!!</i></b></p>
+                    <div class="button-container">
+                        <a href="JunglaCap07_Niebla1CEpelea.html" class="button">Luchar</a>
+                        <a href="Junglacap07_Muerte.html" class="button">Huir</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemRama.png" alt="Rama">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

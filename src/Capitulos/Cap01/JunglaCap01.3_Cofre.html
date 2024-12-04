@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: ¡El Despertar!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/Choza01.jpeg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="content">
+            <p>En la esquina de la choza, <b>Peter</b> encuentra un cofre de madera desgastada.
+                Lumina señala el cofre con un movimiento flotante y lo insta a abrirlo.</p>
+            <p><b>Lumina:</b> — Afuera hay muchos peligros, viajero. <br>
+                — Antes de salir, deberías revisar ese cofre. Contiene un arma, 
+                pero su contenido depende de la diosa de la fortuna.</p>
+
+            <a class="button" 
+            onclick="getElementById('parte2').style.display='block'
+                        getElementById('popupCen').style.display='block';">Continuar
+            </a>
+            <div id="parte2" style="display:none;">
+
+                <p>El jugador abre el cofre.</p>
+                <p><b>Cada cofre en el juego dará armas u objetos al azar</b></p>
+                <p><b>Lumina:</b> — La suerte siempre juega un papel importante, <b>Peter</b>.
+                    Prepárate bien, porque no habrá vuelta atrás.</p>
+
+                <a class="button" 
+                onclick="getElementById('parte3').style.display='block'
+                        getElementById('popupDer').style.display='block';">Continuar
+                </a>
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Lumina:</b> — El cofre arriba es especial contiene items curativos.
+                        Ve abrirlo, no lo olvides. La Diosa de la fortuna decidirá.</p>
+                    <p>Tras tomar el arma obtenida del cofre y pociones, <b>Peter</b>
+                        se arma de valor y se dirige hacia la salida de la choza.</p>
+
+                    <a class="button" 
+                    onclick="getElementById('parte4').style.display='block';
+                            getElementById('popupIzq').style.display='block'">Continuar
+                    </a>
+                </div>
+                <div id="parte4" style="display:none;">
+
+                    <p>Con el arma en mano y una sensación de inquietud, Peter abre la puerta.
+                        Frente a él se extiende una jungla inmensa, cargada de misterio y peligro...</p>
+                    <div class="button-container">
+                        <a href="/src/Capitulos/Cap02/JunglaCap02_Lajungla.html" class="button">Capitulo 2</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCofre01.png" alt="cofre">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemPotiCura.png" alt="Poción">
+                </div>
+            </div>
+            <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

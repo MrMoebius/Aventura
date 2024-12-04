@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestAltar04.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p> Has elegido el camino de la derecha. </p>
+            <p>El sendero te lleva por una ruta algo más tranquila</p>
+
+            <div class="button-container">
+                <a class="button" onclick="mostrarContenido('parte2')">Menos mal</a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p> Al final del camino ves algo... un altar antiguo </p>
+                <p>Parece estar cubierto de símbolos que no reconoces.</p>
+                <p>Uhm... El altar parece relacionado con el misterioso criptex que has encontrado. </p>
+
+                <div class="button-container">
+                    <a class="button" onclick="mostrarContenido('parte3')">Examinar</a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+                    
+                    <p><b>Peter: </b><i> (Examinando el altar)</i> </p>
+                    <p>— Este lugar se siente... extraño. Debe haber algo importante aquí. </p>
+                    <p><i> la mesa del altar, hay una inscripción en un lenguaje que no comprendes.
+                            Sin embargo, en el centro del altar hay un objeto similar a un ahorcado,
+                            un acertijo con espacio para letras. El reto consiste en adivinar la palabra
+                            correcta antes de que se te acaben los intentos.</i> </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap05_Capibara3de1.html " class="button"> Ufff... </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function mostrarContenido(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

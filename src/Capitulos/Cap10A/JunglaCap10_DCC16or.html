@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestEstatuaOrni01.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b><i>Corriendo por la senda del ornitorrinco. Has llegado una hondonda.</i></b></p>
+            <p><b><i>Muy cerca una estatua y una voz...</i></b></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Escuchar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Estatua: </b><i>(Solemnemente petrea)</i></p>
+                <p>— Veo que la bendición del ornitorrinco deseas optar para así a la Diosa poder derrotar.
+                    La palabra tú has de recordar si deseas ganar.</p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                    >ACertijo
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b><i>— soy la meta deseada, con líneas claras.
+                                No busco tamaño, sino claridad y distinción</i></b></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC16or1.html" class="button">Definición</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Delimitación</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Tonificación</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Modelado</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Destacado</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Precisión</a>
+                        <a href="JunglaCap10_DCC16Muerte.html" class="button">Esculpido</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Ornitorrinco03.png" alt="Ornitorrinco">
+        </div>
+    </div>
+
+</body>
+
+</html>

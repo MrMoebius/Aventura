@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: ¡El Despertar!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url(/src/Fondos/Choza01.jpeg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="content">
+            <p><b>..... :</b> ...empieza a notar detalles extraños en su cuerpo.</p>
+
+            <a class="button" 
+            onclick="getElementById('parte2').style.display='block';
+                    getElementById('popupDer').style.display='block'; 
+                    getElementById('popupIzq').style.display='block';">Continuar
+            </a>
+            <div id="parte2" style="display:none;">
+
+                <p><b>..... :</b> ...se mira el brazo tras sentir un <i>leve hormigueo y ve unas marcas rojas</i>: <br>
+                    pequeños puntos conectados en un patrón que no reconoce.
+                    No duelen, pero al tocarlas siente un escalofrío.</p>
+                <p>Al buscar en su cuello, encuentra un <i>collar en forma de cuervo</i>, <br>
+                    con el pico manchado de algo que parece sangre seca.
+                    Aunque el objeto le resulta extrañamente familiar,<br>
+                    no puede recordar nada al respecto.</p>
+                <p>En su mano derecha descubre un <i>anillo de piedra negra con grabados misteriosos</i>. <br>
+                    Lo observa, intentando comprender su significado, pero no lo consigue.</p>
+
+                    <a href="JunglaCap01.2_DescubriendoNombre1.html" class="button">Continuar</a>
+            </div>
+
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCollar.png " alt="Collar">
+                </div>
+            </div>
+
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemAnillo01.png" alt="Anillo">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

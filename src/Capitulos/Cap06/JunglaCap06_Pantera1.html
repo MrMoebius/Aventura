@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Capítulo 6: Encuentro con Alex la Pantera Sabrosona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest21.jpeg");
+        }
+    </style>
+</head>
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><b>Alex la Pantera Sabrosona: </b><i>(Con voz profundamente elegante y melodiosa)</i></p>
+            <p>— Correcto, humano. Soy Alex, la Pantera Sabrosona, guardiana de esta jungla.
+                He estado observando tus pasos.</p>
+            <p><b>Peter: </b><i>(Levantando una ceja)</i></p>
+            <p>— Sabrosona, ¿eh? Supongo que te ganas tu nombre por algo más que tu atractivo felino. </p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'">Continuar
+                </a>
+            </div>
+            <div id="parte2" style="display: none;">
+
+                <p><b>Don Capibara: </b><i> (Con respeto)</i></p>
+                <p>— <b>Alex </b>es un aliado valioso, <b>Peter</b>.
+                    Su conocimiento de la jungla es vasto,y puede ayudarte a
+                    descubrir más sobre ti mismo y sobre <b>Lumina</b>. </p>
+                <div class="button-container">
+                    <a href="JunglaCap06_Pantera2.html">Entiendo</a>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara05.png" alt="Don Capibara">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Pantera05.png " alt="Pantera">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: ¡El Despertar!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/Choza01.jpeg");
+        }
+
+        .popup-container-derecha {
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p class="cap">Capítulo 1: El Despertar.</p>
+            <p><b>..... : </b> despierta sobresaltado en una pequeña choza de madera,
+                rodeado por la espesura de la jungla. La luz se filtra por las grietas,
+                revelando un lugar húmedo y descuidado. Desorientado, se levanta y
+                observa a su alrededor con desdén.</p>
+            <p><b>..... : </b> <i>(Frunciendo el ceño)</i></p>
+            <p>— ¿Qué demonios...? ¿Dónde estoy? ¿Y quién pensó que esto era un
+                buen lugar para dormir?</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'; 
+                        getElementById('popupDer').style.display='block';">Confuso
+                </a>
+                <div id="parte2" style="display:none;">
+
+                    <p>De repente, una luz azulada aparece flotando frente a él. Es un fuego fatuo, etéreo y misterioso,
+                        que comienza a hablar con una voz tranquila.</p>
+                    <p><b>Lumina: </b></p>
+                    <p>— No temas, viajero. Estoy aquí para ayudarte. Me llamo Lumina, un espíritu guía. Es un placer
+                        conocerte.</p>
+                    <p><b>..... : </b> observa al ente, incrédulo. En este punto, tiene dos opciones:</p>
+                    <div class="button-container">
+                        <a href="JunglaCap01.1.1_HablarLumina.html" class="button">Hablar con Lumina</a>
+                        <a href="JunglaCap01.1.2_AtacarLumina.html" class="button">Atacar a Lumina</a>
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src=" " alt=" ">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src=" " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

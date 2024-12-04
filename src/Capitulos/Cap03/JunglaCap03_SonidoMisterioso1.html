@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForest12.jpeg"); 
+        }
+    
+    
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <p>Guiados por el extraño sonido que parece provenir de todas partes, <b>Peter</b> y <b>Lumina</b> 
+                continúan adentrándose en la espesa jungla. Los árboles se cierran a su alrededor, y las 
+                sombras que proyectan sus ramas y hojas crean figuras inquietantes. A pesar de que la jungla 
+                parece inerte, el sonido persiste, casi como si la misma naturaleza estuviera susurrando 
+                secretos olvidados.</p>
+            
+            <div class="button-container">
+                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p>A medida que avanzan, la jungla se divide en dos caminos.</p>
+                <div class="button-container">
+                    <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                </div>
+    
+                <div id="parte3" style="display:none;">
+                    <p>El Camino de la Desviación: Un sendero a la izquierda, rodeado de una espesa niebla y 
+                        con el eco de criaturas invisibles resonando en sus profundidades. 
+                        A lo lejos, se puede ver un brillo tenue, como si algo estuviera esperando. <br>
+
+                        El Camino del Misterio: Un camino a la derecha que parece más tranquilo, 
+                        pero las sombras entre los árboles no dejan de moverse. 
+                        El sonido misterioso continúa, guiándolos hacia lo desconocido. </p>
+                <div class="button-container">
+                    <a href="JunglaCap03_SonidoMisterioso1Desv.html" class="button">El Camino de la Desviación</a>
+
+                    <a href="/src/Capitulos/Cap03/JunglaCap03_SonidoMisterioso1Mist.html" class="button">El Camino del Misterio</a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script>
+        function mostrarContenido(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

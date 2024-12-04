@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8: ¡Ainhoa, la Nutria Dormilona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest05.jpeg");
+        }
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter </b><i>(Con una sonrisa)</i></p>
+            <p>Hola, <b>Ainhoa</b>. Soy <b>Peter</b>, y estos son mis... inusuales compañeros de viaje. 
+                Parece que necesito toda la ayuda posible para entender qué está pasando aquí.</p>
+                <p><b>Ainhoa la Nutria Dormilona: </b><i>(Despertando lentamente y bostezando)</i></p>
+                <p>Claro, <b>Peter</b>. Mis sueños a menudo revelan secretos ocultos. ¿Qué es lo que buscas? </p>
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block';
+                        getElementById('popupCen').style.display='block'"
+                    >Mostrar.
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter </b><i>(Sacando el criptex y el pergamino.)</i></p>
+                <p>— Encontré esto en un cofre, 
+                    y me están diciendo que Lumina, esa cosa flotante, quiere usar mi cuerpo para renacer. 
+                    No es el mejor trato del mundo, ¿verdad? </p>
+
+
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                            >Ansioso.
+                        </a>
+                    </div>
+
+                    <div id="parte3" style="display:none;">
+
+                        <p><b>Ainhoa la Nutria Dormilona: </b><i>(Examinando el pergamino bostezonamente)</i></p>
+                        <p>— Las palabras en este pergamino son antiguas y poderosas. Hay una forma de 
+                            romper el vínculo, pero necesitarás más que fuerza física. </p>
+
+                            <div class="button-container">
+                                <a href="JunglaCap08_Nutria2.html" class="button">Acentir bostezando</a>
+
+                            </div>
+                    </div>
+            </div>
+
+            <div id="popupDer" class="popup-container-derecha" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Nutria01.png" alt="Nutria">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCriptex.png" alt="criptex">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemPergamino.png" alt="Pergamino">
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+</body>
+
+</html>

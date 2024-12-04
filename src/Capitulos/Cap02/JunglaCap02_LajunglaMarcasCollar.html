@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2: ¡Descubrimientos Inquietantes!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest06.jpeg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter</b> <i>(Sacando el collar de cuervo de su camisa):</i></p>
+            <p>— ¿Y qué me dices de esto? ¿Es que me gusta el estilo siniestro, o hay algo más en juego aquí?</p>
+
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block'
+                        getElementById('popupIzq').style.display='block';">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Lumina</b> <i>(Con tono tranquilizador):</i></p>
+                <p>— El cuervo es un símbolo de transición y misterio.
+                    Este collar podría ser la clave para desentrañar tu pasado.
+                    Puede ser más importante de lo que crees.</p>
+                <div class="button-container">
+                    <a href="JunglaCap02_LajunglaMarcas1.html" class="button">Volver</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+    <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/ItemCollar.png" alt="Collar">
+        </div>
+    </div>
+
+</body>
+
+</html>

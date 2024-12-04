@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForestAltar03.jpeg"); 
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            
+            <h2> El Acertijo del Altar.</h2>
+            <p> Justo cuando <b>Peter</b> se detiene frente al altar, 
+                una luz brillante emerge del centro de la piedra. 
+                Los símbolos en la superficie comienzan a moverse y, 
+                de repente, una voz resonante llena el aire. </p>
+            
+            <div class="button-container">
+                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                
+                <p> <b>Voz del Altar: </b> </p>
+                <p>— Cinco intentos tendrás para resolver el acertijo, 
+                    joven viajero. Si fallas, tu destino será sellado. </p>
+
+                    <div class="button-container">
+                        <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                    </div>
+        
+                    <div id="parte3" style="display:none;">
+                        <p>(Más claro, se escuchan las palabras en el aire): </p>
+                        <p><b><i>"En el principio, dos son uno. Uno es más, y el otro es menos. 
+                            Juntos, lo que no es, es." </i></b></p>
+                            <div class="button-container">
+                                <a href="JunglaCap03_SonidoMisterioso1Mist3.html" class="button">Ehh?</a>
+                        
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarContenido(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Capítulo 6: Encuentro con Alex la Pantera Sabrosona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest25.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><i>Te golpeas con un cofre escondido entre las raíces de un árbol.
+                    El cofre parece viejo, cubierto de símbolos misteriosos. </i></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'"
+                    >¿Otra vez...?
+                </a>
+
+                <div id="parte2" style="display:none;">
+
+                    <p><i>.....</i></p>
+
+                    <div class="button-container">
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block';
+                                getElementById('popupDer').style.display='block'"
+                            >Abrelo!!!
+                        </a>
+
+                        <div id="parte3" style="display:none;">
+
+                            <p>Abres el cofre y encuentras <b>un escudo robusto</b> como recompensa</p>
+                            <p> Este equipo mejorado puede ser útil para los desafíos que vendrán.</p>
+                            <a href="/src/Capitulos/Cap07/JunglaCap07_Niebla.html" class="button">Capitulo 7</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemEscudo.png " alt="Escudo ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/temCofreTesoro01.png" alt="Cofre">
+                </div>
+            </div>
+
+</body>
+
+</html>

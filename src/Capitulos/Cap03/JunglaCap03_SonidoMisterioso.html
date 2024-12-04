@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: !El Sonido Misterioso!</title>
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        .bg{
+        /* La imagen de fondo */
+        background-image: url("/src/Fondos/RainfForest11.jpeg"); 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+        
+            <p class="cap">Capítulo 3: El Sonido Misterioso.</p>
+            <p><b>Peter:</b> — Vale, Lumina, ¿dónde vamos ahora? Algo me dice que quedarme aquí no es la mejor idea.</p>
+            <p><b>Lumina (Ente):</b> (Flotando inquietamente) — Tienes razón, Peter. Sigamos ese sonido misterioso. 
+                Puede que nos lleve a las respuestas que buscas.</p>
+            
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupIzq').style.display='block'"
+                    >Continuar
+                </a>            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter:</b> <i>(Escuchando atentamente)</i> — ¿Escuchas eso? Parece un susurro... pero no es un susurro normal.</p>
+                <p><b>Lumina:</b> <i>(Intrigante y enigmática) </i>— Es el canto de la jungla. Un llamado antiguo y poderoso. Síguelo, y ten cuidado. 
+                    El camino puede estar lleno de desafíos, como ya has comprobado.</p>
+                <div class="button-container">
+                    <a href="JunglaCap03_SonidoMisterioso1.html" class="button">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+    <div id="popupDer" class="popup-container-derecha" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+        </div>
+    </div>
+
+</body>
+</html>

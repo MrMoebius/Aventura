@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainforestMuerte05.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Peter: </b><i>(con lágrimas en los ojos, susurrando )</i></p>
+            <p>— Te fallé... y ahora… no puedo vivir así</p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'"
+                    >....
+                </a>            
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <h1>Fin</h1>
+
+                <div class="button-container">
+                    <a href="index.html" class="button">Reiniciar</a>
+                    <a href="/src/Capitulos/Cap09/JunglaCap09_Ornitorinco7.html" class="button">Buscar otro final</a>
+                </div>
+            </div>
+
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemCuerda.png" alt="Cuerda">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

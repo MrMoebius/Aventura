@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Capítulo 6: Encuentro con Alex la Pantera Sabrosona!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest21.jpeg");
+        }
+    </style>
+</head>
+
+</style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>El Dilema del Camino:</b> Elige con Sabiduría</p>
+            <p>Después de la conversación con Alex, Peter se encuentra ante una nueva bifurcación en el camino.
+                La jungla parece volverse más oscura a medida que el viento comienza a susurrar entre las hojas.
+                Don Capibara y Alex se detienen a su lado. </p>
+            <p><b>Don Capibara:</b>. <i>(Sereno)</i></p>
+            <p>— Como ya te he dicho, cada camino tiene sus propios desafíos. Tienes dos opciones.
+                El camino de la izquierda te llevará hacia un enemigo imponente, un guerrero de gran resistencia.
+                Sin embargo, podrías obtener un cofre con equipo valioso si logras vencerlo. </p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block'">Interesante
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Alex la Pantera Sabrosona: </b><i> (Elegante) </i> </p>
+                <p>— El camino de la derecha te llevará directamente al santuario. Allí hallarás las respuestas que
+                    buscas,
+                    pero también desafíos y enigmas que pondrán a prueba tu mente y tus fuerzas. </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block';
+                            getElementById('popupDer').style.display='block'">Hmm...!!
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter:</b><i> (Pensando en voz alta)</i></p>
+                    <p>— Hm... El de la izquierda suena tentador, pero el de la derecha parece lo que
+                        realmente necesito para avanzar en la historia. </p>
+                    <p><b>Lumina: </b><i>(Interviniendo, con voz calmada pero insistente)</i></p>
+                    <p>— La jungla está llena de pruebas, Peter. No tomes decisiones a la ligera.
+                        Asegúrate de estar preparado para lo que venga, sin importar el camino que tomes. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap06_Pantera2iz.html" class="button">Camino izquierda</a>
+                        <a href="JunglaCap06_Pantera2de.html" class="button">Camino derecha</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Pantera01.png" alt="Pantera">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+        <div class="popup-content">
+            <img src="/src/ImagensRender/Capibara05.png" alt="Don Capibara">
+        </div>
+    </div>
+</body>
+
+</html>

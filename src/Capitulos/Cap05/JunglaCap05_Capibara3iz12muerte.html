@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: ¡Emilio, el Capibara con Bigote y Pajarita Elegante¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url(/src/Fondos/RainforestMuerte01.jpeg);
+        }
+
+        span {
+            width: 12ch;
+            /* ajustar ancho de palabra */
+            animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+            white-space: nowrap;
+        }
+        .popup-container-derecha {
+            width: 35%;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="content">
+            <p class="title"><span class="death-text">Has muerto!!!</span></p>
+            <a href="JunglaCap05_Capibara.html" class="button">Continuar</a>
+
+
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemTelaraña.png" alt="Telaraña">
+                </div>
+            </div>
+
+        </div>
+    </div>  
+</body>
+
+</html>

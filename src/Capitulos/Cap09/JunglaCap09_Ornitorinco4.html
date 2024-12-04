@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: ¡Miguel, el Ornitorrinco en Definición!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForestTemplo01.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Don Capibara: </b><i>Frunciendo el ceño</i></p>
+            <p>— Bueno, parece que tenemos un nuevo objetivo. ¿Miguel, conoces algún armadillo por aquí?</p>
+            <div class="button-container">
+
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block'"
+                    >Esperar.
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Miguel el Ornitorrinco: </b><i>(Sonriendo musculosamente)</i></p>
+                <p>— Puede que sí… aunque es un poco excéntrico. </p>
+
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >....
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Con determinación)</i></p>
+                    <p>— Entonces vamos a encontrarlo. No podemos detenernos ahora. </p>
+                    <br>
+                    <p><b><i>El grupo se pone en marcha, con la promesa de nuevas pistas y desafíos en el
+                                horizonte.</i></b></p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap09_Ornitorinco5.html" class="button">Y yo sin gafas de sol.</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara05.png" alt="Don Capibara">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Ornitorrinco02.png " alt="Ornitorrinco">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

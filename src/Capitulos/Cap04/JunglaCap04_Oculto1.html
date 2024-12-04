@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest16.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><i>bzzzz... Bzzzz....</i></p>
+
+            <div class="button-container">
+                <a class="button" onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p>Al acercarse al árbol, Peter nota una marca en el tronco:
+                    una inscripción que no había visto antes. Saca la hoja de su mochila y
+                    dibuja cuidadosamente la inscripción, añadiéndola a las otras
+                    runas que encontró en el altar. </p>
+                <p><b>Peter: </b><i> (Con sarcasmo) </i></p>
+                <p>— Más jeroglíficos, justo lo que necesitaba.
+                    Vamos a apuntarlo para la colección. </p>
+                <div class="button-container">
+                    <a class="button" onclick="getElementById('parte3').style.display='block';
+                                getElementById('popupIzq').style.display='block'">Continuar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i><b>Lumina:</b> (Con voz tranquilizadora) </i></p>
+                    <p>— A veces, los caminos no son lo que parecen.
+                        Debes descubrir algo antes de avanzar realmente. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto2.html " class="button"> Revisar</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/ItemAnillo01.png" alt=" ">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

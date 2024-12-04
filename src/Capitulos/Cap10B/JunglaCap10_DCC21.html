@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest08.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <p><b>Alex la Pantera Sabrosona: </b><i>(Increiblemente elegante))</i></p>
+            <p>Está bien, <b>Peter</b>... respetamos tu decisión.
+                Aun así, si alguna vez necesitas ayuda, siempre puedes regresar con nosotros.</p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block';
+                        getElementById('popupDer').style.display='block'"
+                    >Nos vemos
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p><b><i>Emprenden el viaje <b>Lumina</b> y <b>Peter</b>
+                            caminando juntos, alejándose del grupo, cada uno siguiendo su propio destino.</i></b></p>
+
+                <div class="button-container">
+
+                    <a href="JunglaCap10_DCC22.html" class="button">Continuar</a>
+
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de derecha(oculto por defecto) -->
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Capibara02.png" alt="Capibara">
+                </div>
+            </div>
+
+
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Pantera02.png" alt="Pantera">
+                </div>
+            </div>
+
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Nutria03.png" alt="Nutria">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

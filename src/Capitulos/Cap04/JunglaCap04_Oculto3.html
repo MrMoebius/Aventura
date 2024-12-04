@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 04: !Oculto¡</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest18.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+
+            <p><i>Mientras sigue el camino oculto, Peter se encuentra con un cofre antiguo,
+                    medio enterrado entre las raíces de un gran árbol. El cofre está cubierto
+                    de símbolos y runas, similares a los que encontró en el altar.</i></p>
+
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupDer').style.display='block'">Continuar
+                </a>
+            </div>
+
+            <div id="parte2" style="display:none;">
+                <p><b>Peter:</b><i>(Con tono sarcástico) </i></p>
+                <p>— ¿En serio? Un cofre misterioso en medio de la jungla.
+                    Esto empieza a parecerse a una novela barata. </p>
+                <p><b>Lumina: </b><i> (Intrigante) </i></p>
+                <p>— Este cofre puede contener las respuestas que buscas,
+                    pero antes, debes abrirlo. </p>
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Continuar
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><i><b>Peter: </b> (Mirando el cofre) </i></p>
+                    <p>— Claro, porque todo en esta jungla viene con un truco. A ver qué tenemos aquí. </p>
+                    <div class="button-container">
+                        <a href="JunglaCap04_Oculto4.html" class="button"> Revisar</a>
+
+                    </div>
+                </div>
+                </div>
+                <!-- El popup para la imagen de la derecha (oculto por defecto) -->
+                <div id="popupDer" class="popup-container-derecha" style="display:none;">
+                    <div class="popup-content">
+                        <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                    </div>
+                </div>
+
+                <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+                <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                    <div class="popup-content">
+                        <img src="/src/ImagensRender/temCofreTesoro02.png" alt="Cofre">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 10: ¡Decisiones!</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .bg {
+            /* La imagen de fondo */
+            background-image: url("/src/Fondos/RainfForest07.jpeg");
+        }
+
+        span {
+            width: 12ch;
+            /* ajustar ancho de palabra */
+            animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <h2>Capitulo 10: Decisiones.</h2>
+
+            <p><b>Felipe el Armadillo Heroico: </b><i>(sin insistir, algo heroicamente distante)</i></p>
+            <p>— Si cambias de opinión, sabes dónde encontrarme. Pero ahora está en tus manos</p>
+            <div class="button-container">
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block';
+                        getElementById('popupCen').style.display='block'"
+                    >Continuar
+                </a>
+
+            </div>
+
+            <div id="parte2" style="display:none;">
+
+                <p><b>Miguel el Ornitorrinco: </b><i>(Sonriendo nerviosamente)</i></p>
+                <p>— Entonces... ¿Quieres que nos vayamos, <b>Peter</b>?</p>
+
+                <div class="button-container">
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'"
+                        >Acentir
+                    </a>
+                </div>
+
+                <div id="parte3" style="display:none;">
+
+                    <p><b>Peter: </b><i>(Con determinación)</i></p>
+                    <p>— Quiero confiar en Lumina. Ella ha estado conmigo todo este tiempo...
+                        siento que estoy conectado a ella de alguna forma. No necesito el cristal.
+                        Quiero averiguarlo por mí mismo. </p>
+
+                    <div class="button-container">
+                        <a href="JunglaCap10_DCC21.html" class="button">Continuar</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Armadillo05.png " alt="Armadillo">
+                </div>
+            </div>
+            <!-- El popup para la imagen del centro (oculto por defecto) -->
+            <div id="popupCen" class="popup-container-centro" style="display:none;">
+                <div class="popup-content">
+                    <img src="/src/ImagensRender/Ornitorrinco02.png" alt="Ornitorrinco">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
