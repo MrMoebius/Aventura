@@ -152,55 +152,46 @@ span {
 
 /* Clase para el contenedor de las imágenes emergentes desde la derecha */
 .popup-container-derecha {
-    display: none;
-    /* Oculto por defecto */
-    position: fixed;
-    z-index: 1;
-    /* Asegura que esté encima de otros elementos */
-    right: -20%;
-    /* Inicia fuera de la pantalla a la derecha */
-    top: 30%;
-    /* Ajusta la posición vertical */
-    transform: translate(0, -50%);
-    /* Centra el popup verticalmente */
-    width: 25%;
-    /* Ocupa el % del ancho total de la página */
-    height: auto;
-    /* Ajusta el tamaño de acuerdo al contenido */
-    background-color: rgba(0, 0, 0, 0);
-    /* Fondo negro con transparencia ajustable */
-    animation: slideInRight 0.5s forwards;
-    /* Animación de aparición desde la derecha */
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para mantenerlo en su lugar */
+    z-index: 1; /* Asegura que esté encima de otros elementos */
+    right: 0; /* Alineado al borde derecho */
+    top: 0; /* Alineado al borde superior */
+    transform: none; /* Sin transformaciones adicionales */
+    width: 25%; /* Ocupa el % del ancho total de la página */
+    height: auto; /* Ajusta el tamaño de acuerdo al contenido */
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro con transparencia ajustable */
+    animation: slideInRight 0.5s forwards; /* Animación de aparición desde la derecha */
 }
 
 /* Clase para el contenedor de las imágenes emergentes desde la izquierda */
 .popup-container-izquierda {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: -20%;
-    /* Inicia fuera de la pantalla a la izquierda */
-    top: 80%;
-    transform: translate(0, -50%);
-    width: 25%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    animation: slideInLeft 0.5s forwards;
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para mantenerlo en su lugar */
+    z-index: 1; /* Asegura que esté encima de otros elementos */
+    left: 0; /* Alineado al borde izquierdo */
+    bottom: 0; /* Alineado al borde inferior */
+    transform: none; /* Sin transformaciones adicionales */
+    width: 25%; /* Ocupa el % del ancho total de la página */
+    height: auto; /* Ajusta el tamaño de acuerdo al contenido */
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro con transparencia ajustable */
+    animation: slideInLeft 0.5s forwards; /* Animación de aparición desde la izquierda */
 }
 
 /* Clase para el contenedor de las imágenes emergentes desde el centro */
 .popup-container-centro {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 80%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    width: 25%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    animation: fadeIn 0.5s forwards;
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para mantenerlo en su lugar */
+    z-index: 1; /* Asegura que esté encima de otros elementos */
+    right: 0; /* Alineado al borde derecho */
+    bottom: 0; /* Alineado al borde inferior */
+    transform: none; /* Sin transformaciones adicionales */
+    width: 25%; /* Ocupa el % del ancho total de la página */
+    height: auto; /* Ajusta el tamaño de acuerdo al contenido */
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro con transparencia ajustable */
+    animation: fadeIn 0.5s forwards; /* Animación de aparición gradual */
 }
+
 
 /* Clase para el contenido del popup */
 .popup-content {
@@ -257,38 +248,78 @@ body.loaded .popup-container-centro {
     display: block;
 }
 
-/*----------Responsivo--------------*/
-
-/* Estilos para pantallas menores de 480px (móviles) */
+/*----------Responsivo--------------*//* Estilos para pantallas menores de 480px (móviles) */
 @media (max-width: 480px) {
     h1 {
-        font-size: 36px;  /* Reducir más el tamaño de fuente */
+        font-size: 36px;
+        margin: 3px;  /* Reducir más el tamaño de fuente */
     }
 
     h2 {
         font-size: 18px;
+        margin: 3px;
     }
 
     p {
         font-size: 12px;
+        margin: 3px;
+    }
+    p.cap {
+        font-size: 18px;
     }
 
+    p.title {
+        margin: 3px;
+    }
     .container {
-        padding: 15px;
+        padding: 5px 3px;
         max-width: 100%;  /* Usar todo el ancho disponible */
     }
 
     .content {
-        padding: 10px;
+        padding: 3px;
         border-radius: 15px;
-    }
-
-    .button-container a, .button-container button, .button {
-        padding: 6px 12px;
-        margin: 6px 3px;
     }
 
     .small-image {
         max-width: 90%;
+    }
+
+    /* Botones responsive */
+    .button-container a, .button-container button, .button {
+        padding: 4px 8px;
+        margin: 3px 3px;
+        font-size: 12px;  /* Tamaño actual */
+
+        /* Opciones de tamaño reducido */
+        /* Opción 1: Pequeño */
+        /* padding: 4px 8px; */
+        
+        /* Opción 2: Muy pequeño */
+        /* padding: 2px 6px; */
+
+        margin: 6px 3px;  /* Reducir el espacio entre los botones */
+    }
+
+    /* Pop-ups responsive */
+    .popup-container-derecha {
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 35%;
+    }
+
+    .popup-container-izquierda {
+        left: 0;
+        bottom: 0;
+        transform: none;
+        width: 35%;
+    }
+
+    .popup-container-centro {
+        right: 0;
+        bottom: 0;
+        transform: none;
+        width: 35%;
     }
 }
