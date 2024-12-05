@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 8: ¡Ainhoa, la Nutria Dormilona!</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../../../style.css">
 
     <style>
         .bg {
             /* La imagen de fondo */
-            background-image: url("/src/Fondos/RainfForest05.jpeg");
+            background-image: url("../../Fondos/RainfForest05.jpeg");
         }
     </style>
 </head>
@@ -24,7 +24,8 @@
             <div class="button-container">
                 <a class="button" 
                 onclick="getElementById('parte2').style.display='block';
-                        getElementById('popupDer').style.display='block'">Escuchar.
+                        getElementById('popupDer').style.display='block'"
+                        >Escuchar.
                 </a>
             </div>
 
@@ -35,8 +36,9 @@
                 <div class="button-container">
                     <a class="button" 
                     onclick="getElementById('parte3').style.display='block';
-                                getElementById('popupIzq').style.display='block';
-                                getElementById('popupCen').style.display='block'">....
+                            getElementById('popupIzq').style.display='block';
+                            getElementById('popupCen').style.display='block'"
+                            >....
                     </a>
                 </div>
 
@@ -55,21 +57,21 @@
             </div>
             <div id="popupDer" class="popup-container-derecha" style="display:none;">
                 <div class="popup-content">
-                    <img src="/src/ImagensRender/Nutria01.png" alt="Nutria">
+                    <img src="../../ImagensRender/Nutria01.png" alt="Nutria">
                 </div>
             </div>
 
             <!-- El popup para la imagen de izquierda (oculto por defecto) -->
             <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
                 <div class="popup-content">
-                    <img src="/src/ImagensRender/Lumina01.png" alt="Lumina">
+                    <img src="../../ImagensRender/Lumina01.png" alt="Lumina">
                 </div>
             </div>
 
             <!-- El popup para la imagen del centro (oculto por defecto) -->
             <div id="popupCen" class="popup-container-centro" style="display:none;">
                 <div class="popup-content">
-                    <img src="/src/ImagensRender/Pantera01.png" alt="Pantera">
+                    <img src="../../ImagensRender/Pantera01.png" alt="Pantera">
                 </div>
             </div>
 

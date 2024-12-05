@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Capítulo 6: Encuentro con Alex la Pantera Sabrosona!</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../../../style.css">
 
     <style>
         .bg {
             /* La imagen de fondo */
-            background-image: url("/src/Fondos/RainfForest25.jpg");
+            background-image: url("../../Fondos/RainfForest25.jpg");
         }
 
 </style>
@@ -21,7 +21,10 @@
             <p><b><i>75 year later...</i></b></p>
 
             <div class="button-container">
-                <a class="button" onclick="mostrarContenido('parte2')">Uff...</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                    >Ufff...
+                </a>
             </div>
 
                     <div id="parte2" style="display:none;">
@@ -37,13 +40,7 @@
                     </div>
         </div>
     </div>
-    
-    </div>
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+
 </body>
 
 </html>

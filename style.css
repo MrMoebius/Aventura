@@ -48,6 +48,7 @@ h2 {
 p {
     font-family: 'CharmReg', 'sans-serif';
     font-size: 16px;
+    margin: 10px;
     color: whitesmoke;
     align-items: center;
     line-height: 120%;
@@ -63,10 +64,12 @@ p.title {
 
 p.cap {
     font-size: 40px;
+    margin: 10px;
     color: whitesmoke;
     align-items: center;
     line-height: 150%;
     /* espacio de interlineado en porcentaje*/
+
 }
 
 /*  text-decoration: 2px wavy underline gold; */
@@ -92,8 +95,9 @@ p.cap {
 .button-container a,
 .button-container button,
 .button {
+    font-size: 14px;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 7px 7px;
     margin: 5px 5px;
     background-color: #004d00;
     color: #ffffff;
@@ -112,7 +116,7 @@ p.cap {
 }
 
 .pequeñica {
-    max-width: 50%;
+    max-width: 20%;
     height: auto;
 }
 
