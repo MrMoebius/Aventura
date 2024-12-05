@@ -26,13 +26,17 @@
                 secretos olvidados.</p>
             
             <div class="button-container">
-                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Continuar
+                </a>
             </div>
 
             <div id="parte2" style="display:none;">
                 <p>A medida que avanzan, la jungla se divide en dos caminos.</p>
                 <div class="button-container">
-                    <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                    <a class="button" 
+                    onclick="getElementById('parte3').style.display='block'">Continuar
+                    </a>
                 </div>
     
                 <div id="parte3" style="display:none;">
@@ -53,10 +57,6 @@
             
         </div>
     </div>
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+
 </body>
 </html>
