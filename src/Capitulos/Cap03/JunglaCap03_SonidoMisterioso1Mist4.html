@@ -26,7 +26,10 @@
             <p><i></i>"Juntos, lo que no es, es." </p><br>
             <div class="button-container">
 
-                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Continuar
+                </a>
             </div>
             
             <div id="parte2" style="display:none;">
@@ -36,17 +39,20 @@
                     tal vez... "unidad", "equilibrio"... No, mejor no me precipito. </p>
                     
                     <div class="button-container">
-                        <a class="button" onclick="mostrarContenido('parte3')">Intenta adivinar</a>
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                        >Intentar adivinar
+                        </a>
                     </div>
         
                     <div id="parte3" style="display:none;">
-                        <p><b><i>_ A_ A _ _E</i></b></p>
+                        <p><b><i>_ A_ _ _ _E</i></b></p>
 
                             <div class="button-container">
                                 
                                 <a href="JunglaCap03_SonidoMisterioso1Mist41.html " class="button">GALANTE</a>
                                 <a href="JunglaCap03_SonidoMisterioso1Mist5.html " class="button"> BALANCE </a>
-                                <a href="JunglaCap03_SonidoMisterioso1Mist41.html " class="button">CASARTE</a>
+                                <a href="JunglaCap03_SonidoMisterioso1Mist41.html " class="button">AZÓTALE</a>
                                 <a href="JunglaCap03_SonidoMisterioso1Mist41.html " class="button">FALLARE</a>
 
                             </div>
@@ -55,11 +61,6 @@
         </div>
     </div>
 
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
 </body>
 
 </html>

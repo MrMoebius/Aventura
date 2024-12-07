@@ -12,11 +12,10 @@
             /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest08.jpeg");
         }
-
-        span {
-            width: 12ch;
-            /* ajustar ancho de palabra */
-            animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+        @media (max-width: 480px) {
+        .popup-container-izquierda {
+            width: 40vw;
+            }
         }
     </style>
 </head>

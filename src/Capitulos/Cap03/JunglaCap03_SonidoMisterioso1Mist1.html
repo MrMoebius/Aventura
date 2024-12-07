@@ -24,7 +24,10 @@
             <p><b>Peter:</b> <i>(Mirando los símbolos con curiosidad)</i>   </p>
             <p>— ¿Qué significa todo esto? ¿Qué están intentando decirme?</p>
             <div class="button-container">
-                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Continuar
+                </a>
             </div>
 
             <div id="parte2" style="display:none;">
@@ -35,7 +38,10 @@
                     con <b>mi propósito</b>. 
                     Pero no entiendas todo de inmediato. El camino no es lineal. </p>
                     <div class="button-container">
-                        <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                        </a>
                     </div>
                     
                     <div id="parte3" style="display:none;">
@@ -45,7 +51,10 @@
                             (Dibuja los símbolos cuidadosamente en la hoja, 
                             tomando nota de cada uno mientras los observa con atención.) </p>
                         <div class="button-container">
-                            <a class="button" onclick="mostrarContenido('parte4')">Continuar</a>
+                            <a class="button" 
+                            onclick="getElementById('parte4').style.display='block'"
+                            >Continuar
+                            </a>
                         </div>
                             <div id="parte4" style="display:none;">
                                 
@@ -60,13 +69,7 @@
             </div>
         </div>
     </div>
-    
 
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
 </body>
 
 </html>

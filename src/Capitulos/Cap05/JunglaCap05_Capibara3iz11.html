@@ -9,8 +9,13 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest19.jpeg");
+        }
+        
+        @media (max-width: 480px) {
+        .popup-container-izquierda {
+            width: 60vw;
+            }
         }
     </style>
 </head>
@@ -26,8 +31,9 @@
                 <a class="button" 
                 onclick="getElementById('parte2').style.display='block';
                         getElementById('popupIzq').style.display='block'"
-                    >Continuar
-                </a>            </div>
+                        >Continuar
+                </a>
+            </div>
 
             <div id="parte2" style="display:none;">
                 <p><b><i>Crack!!</i></b></p>
@@ -35,8 +41,8 @@
                 <div class="button-container">
                     <a class="button" 
                     onclick="getElementById('parte3').style.display='block'"
-                        >Continuar
-                    </a>                
+                    >Continuar
+                    </a>
                 </div>
 
                 <div id="parte3" style="display:none;">
@@ -50,12 +56,12 @@
                 </div>
             </div>
 
-                        <!-- El popup para la imagen de izquierda (oculto por defecto) -->
-                        <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
-                            <div class="popup-content">
-                                <img src="../../ImagensRender/ItemRama.png" alt="Ramita">
-                            </div>
-                        </div>
+            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
+            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+                <div class="popup-content">
+                    <img src="../../ImagensRender/ItemRama.png" alt="Ramita">
+                </div>
+            </div>
 
         </div>
 

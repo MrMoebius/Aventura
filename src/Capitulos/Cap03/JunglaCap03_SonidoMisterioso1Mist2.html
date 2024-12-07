@@ -28,7 +28,10 @@
                 de repente, una voz resonante llena el aire. </p>
             
             <div class="button-container">
-                <a class="button" onclick="mostrarContenido('parte2')">Continuar</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Continuar
+                </a>
             </div>
 
             <div id="parte2" style="display:none;">
@@ -38,7 +41,10 @@
                     joven viajero. Si fallas, tu destino será sellado. </p>
 
                     <div class="button-container">
-                        <a class="button" onclick="mostrarContenido('parte3')">Continuar</a>
+                        <a class="button" 
+                        onclick="getElementById('parte3').style.display='block'"
+                        >Continuar
+                        </a>
                     </div>
         
                     <div id="parte3" style="display:none;">
@@ -54,11 +60,6 @@
         </div>
     </div>
 
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
 </body>
 
 </html>

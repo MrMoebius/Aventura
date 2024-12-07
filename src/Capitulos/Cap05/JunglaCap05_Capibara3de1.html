@@ -9,8 +9,12 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForestAltar04.jpeg");
+        }
+        @media (max-width: 480px) {
+        .popup-container-izquierda {
+            width: 60vw;
+            }
         }
     </style>
 </head>
@@ -24,7 +28,9 @@
                 y una inscripción al pie dice: </p>
 
             <div class="button-container">
-                <a class="button" onclick="getElementById('parte2').style.display='block'">Leer
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Leer
                 </a>
             </div>
 

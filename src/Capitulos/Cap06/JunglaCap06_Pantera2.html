@@ -9,8 +9,21 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest21.jpeg");
+        }
+        @media (max-width: 480px) {
+            .popup-container-derecha {
+            width: 65vw;
+            }
+        .popup-container-izquierda {
+            width: 35vw;
+            }
+            
+        @media (max-width: 480px) {
+        .popup-container-centro {
+            width: 35vw;
+            }
+        }
         }
     </style>
 </head>
@@ -66,7 +79,7 @@
             <!-- El popup para la imagen del centro (oculto por defecto) -->
             <div id="popupCen" class="popup-container-centro" style="display:none;">
                 <div class="popup-content">
-                    <img src="../../ImagensRender/Pantera01.png" alt="Pantera">
+                    <img src="../../ImagensRender/Pantera03.png" alt="Pantera">
                 </div>
             </div>
 

@@ -9,8 +9,18 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainforestMuerte05.jpeg");
+        }
+        @media (max-width: 480px) {
+        .popup-container-derecha {
+            width: 80vw;
+            }
+        .popup-container-izquierda {
+            width: 60vw;
+            }
+        .popup-container-centro {
+            width: 60vw;
+            }
         }
     </style>
 </head>
@@ -28,7 +38,7 @@
                 onclick="getElementById('parte2').style.display='block';
                         getElementById('popupCen').style.display='block';
                         getElementById('popupDer').style.display='block'"
-                    >Atacar!
+                    >Bloquear!
                 </a>
             </div>
 
@@ -43,9 +53,7 @@
                 </div>
 
                 <div id="parte3" style="display:none;">
-                    <div class="imagen">
-                        <img src="../../ImagensRender/ItemChispas.png" alt="Chispas" class="pequeñica">
-                    </div>
+                    <p><b><i>Arrggh...!!!!</i></b></p>
                     
                     <div class="button-container">
                         <a href="JunglaCap10_DCC29FinA.html" class="button">ATACAR!!!</a>
@@ -58,14 +66,14 @@
             <!-- El popup para la imagen de derecha(oculto por defecto) -->
             <div id="popupDer" class="popup-container-derecha" style="display:none;">
                 <div class="popup-content">
-                    <img src="../../ImagensRender/ItemMacheteMejorado.png" alt="Machete">
+                    <img src="../../ImagensRender/LuminaDark01B.png" alt="Lumina">
                 </div>
             </div>
-
-
+            
+            
             <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
                 <div class="popup-content">
-                    <img src="../../ImagensRender/LuminaDark01.png" alt="Lumina">
+                    <img src="../../ImagensRender/ItemMacheteMejorado.png" alt="Machete">
                 </div>
             </div>
 

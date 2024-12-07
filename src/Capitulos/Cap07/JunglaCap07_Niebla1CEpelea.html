@@ -13,7 +13,7 @@
             background-image: url("../../Fondos/RainfForest02.jpeg");
         }
         span {
-            width: 18ch; /* ajustar ancho de palabra */
+            width: 22ch; /* ajustar ancho de palabra */
             animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
             white-space: AUTO;
         }
@@ -23,7 +23,7 @@
 <body>
     <div class="bg">
         <div class="container">
-            <p class="title"><span >500 years later...</span></p>
+            <p class="title"><span >...500 years later...</span></p>
             
 
             <p> <b>Peter:</b>(Agotado)</p>
@@ -31,7 +31,10 @@
 
             <div class="button-container">
 
-                <a class="button" onclick="mostrarContenido('parte2')">SemiBoss??</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >SemiBoss??!
+                </a>
 
             </div>
 
@@ -40,7 +43,10 @@
                 <p> <b>Peter:</b><i>(Exhausto)</i></p>
                 <p>Necesito descansar.</p>
                 <div class="button-container">
-                    <a class="button" onclick="mostrarContenido('parte3')">...???</a>
+                    <a class="button" 
+                    onclick="getElementById('parte2').style.display='block'"
+                    >......!!
+                    </a>
                 </div>
 
                 <div id="parte3" style="display:none;">
@@ -59,11 +65,7 @@
         </div>
 
     </div>
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+
 </body>
 
 </html>

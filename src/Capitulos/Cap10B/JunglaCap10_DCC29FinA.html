@@ -12,6 +12,12 @@
             /* La imagen de fondo */
             background-image: url("../../Fondos/RainforestMuerte05.jpeg");
         }
+        @media (max-width: 480px) {
+        .popup-container-centro {
+            bottom: -20vw;
+            width: 50vw;
+            }
+        }
     </style>
     
 </head>
@@ -57,7 +63,7 @@
     </div>
 
     <!-- El popup para la imagen de derecha(oculto por defecto) -->
-    <div id="popupIzq" class="popup-container-izquierda" style="display:block;">
+    <div id="popupCen" class="popup-container-centro" style="display:block;">
         <div class="popup-content">
             <img src="../../ImagensRender/LuminaDark04.png" alt="Lumina">
         </div>

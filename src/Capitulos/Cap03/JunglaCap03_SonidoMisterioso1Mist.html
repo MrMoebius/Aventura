@@ -9,8 +9,12 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForestAltar03.jpeg");
+        }
+        @media (max-width: 480px) {
+            .popup-container-derecha {
+            width: 50vw;
+            }
         }
     </style>
 
@@ -25,7 +29,8 @@
                 De repente, llegan a un pequeño claro en la jungla. </p>
             <div class="button-container">
                 <a class="button" 
-                onclick="getElementById('parte2').style.display='block'">Continuar
+                onclick="getElementById('parte2').style.display='block'"
+                >Continuar
                 </a>
             </div>
 
@@ -37,7 +42,8 @@
                 <div class="button-container">
                     <a class="button" 
                     onclick="getElementById('parte3').style.display='block';
-                            getElementById('popupDer').style.display='block'">Continuar
+                            getElementById('popupDer').style.display='block'"
+                            >Continuar
                     </a>
                 </div>
 

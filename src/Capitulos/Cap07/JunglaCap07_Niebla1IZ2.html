@@ -9,7 +9,6 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest04.jpeg");
         }
 
@@ -22,7 +21,9 @@
             <p><b><i>Continua el Camino pequeño padawan</i></b></p>
 
             <div class="button-container">
-                <a class="button" onclick="mostrarContenido('parte2')">Desactivar mas</a>
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'"
+                >Desactivar mas!!                </a>
             </div>
             
             <div id="parte2" style="display:none;">
@@ -40,11 +41,7 @@
         </div>
     
     </div>
-    <script>
-        function mostrarContenido(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+
 </body>
 </html>
 

@@ -9,8 +9,12 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest03.jpeg");
+        }
+        @media (max-width: 480px) {
+            .popup-container-derecha {
+            width: 70vw;
+            }
         }
     </style>
 </head>
@@ -27,7 +31,8 @@
 
 
             <div class="button-container">
-                <a class="button" onclick="getElementById('parte2').style.display='block'">Ruido.
+                <a class="button" 
+                onclick="getElementById('parte2').style.display='block'">Ruido.
                 </a>
             </div>
 
@@ -46,14 +51,6 @@
             <div id="popupDer" class="popup-container-derecha" style="display:block;">
                 <div class="popup-content">
                     <img src="../../ImagensRender/ItemTrampa01.png" alt="Trampa">
-                </div>
-            </div>
-
-
-            <!-- El popup para la imagen de izquierda (oculto por defecto) -->
-            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
-                <div class="popup-content">
-                    <img src="../../ImagensRender/Pantera04.png " alt="Pantera">
                 </div>
             </div>
 

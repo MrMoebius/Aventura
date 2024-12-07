@@ -9,8 +9,21 @@
 
     <style>
         .bg {
-            /* La imagen de fondo */
             background-image: url("../../Fondos/RainfForest15.jpeg");
+        }
+        @media (max-width: 480px) {
+            .popup-container-derecha {
+            width: 75vw;
+            }
+        .popup-container-izquierda {
+            width: 50vw;
+            }
+            
+        @media (max-width: 480px) {
+        .popup-container-centro {
+            width: 50vw;
+            }
+        }
         }
     </style>
 </head>
@@ -26,7 +39,7 @@
             <p>— ¿Qué diablos...? ¿Por qué zumbas ahora, anillo? </p>
             <div class="button-container">
                 <a class="button" onclick="getElementById('parte2').style.display='block';
-                        getElementById('popupIzq').style.display='block'">Continuar
+                        getElementById('popupDer').style.display='block'">Continuar
                 </a>
             </div>
 
@@ -61,7 +74,7 @@
             </div>
 
             <!-- El popup para la imagen de izquierda (oculto por defecto) -->
-            <div id="popupIzq" class="popup-container-izquierda" style="display:none;">
+            <div id="popupDer" class="popup-container-derecha" style="display:none;">
                 <div class="popup-content">
                     <img src="../../ImagensRender/Lumina01.png" alt="Lumina">
                 </div>
